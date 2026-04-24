@@ -1,9 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contáctanos</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>Libreria IUD</h2>
+      <nav>
+        <!--ETIQUETA DE NAVEGACION-->
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="/catalogo.html">Catalogo</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+          <li><a href="/reserva.html">Reserva</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contáctanos</h1> <!--Pagina contactanos-->
+      <p>
+        Si tienes preguntas sobre nuestras colecciones, asistencia de investigación o servicios
+      </p>
+      <p>
+        Nuestro equipo esta aqui para ayudarte.
+      </p>
+      <section class="email"> <!--Division para el email-->
+        
+        <img />
+        <h2>Correo de contacto</h2>
+        <p>
+          Soporte institucional para estudiantes y facultades
+        </p>
+        <p>
+          <b>atencionalciudadano@iudigital.edu.co</b>
+        </p>
+      </section>
+
+      <section class="phone"> <!--Division para el numero telefonico-->
+        <img />
+        <h2>Telefono</h2>
+        <p>
+          Llamanos al <b>(+57) 604 520 07 50</b>
+        </p>
+      </section>
+
+      <section class="visitanos"> <!--Division para la direccion-->
+        <img />
+        <h2>Visitanos</h2>
+        <p>
+          Direccion: <b>Cra 55 # 42 90 INT 0101
+          Centro Cívico Plaza de la Libertad
+          Medellín, Antioquia</b>
+        </p>
+      </section>
+      <section class="formulario-contacto"> <!--Division para el formulario de contacto-->
+        <h2>Envianos un mensaje</h2>
+        <form>
+          <label for="nombre">Nombres</label>
+          <input type="text" id="nombre" name="nombre" />
+
+          <label>Dirección de correo</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="asunto">Asunto</label>
+          <select name="select" id="asunto">
+            <option value="peticion" selected>Petición</option>
+            <option value="sugerencia">Pregunta</option>
+            <option value="queja">Queja</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="tu-mensaje"></textarea>
+
+          <button type="submit">Enviar</button> <!--Boton para enviar datos-->
+        </form>
+
+        <p>Tiempo de respuesta: Aproximadamente 24 horas laborales</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3>Libreria IUD</h3>
+      <p>©2026 Universidad Digital De Antioquia Todos los derechos reservados.</p>
+    </footer>
+  </body>
+
 </html>
