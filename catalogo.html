@@ -3,9 +3,283 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Catalogo</title>
   </head>
   <body>
-    <h1>Catalogo</h1>
+    <header>
+      <h1>University Library</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html" target="_blank">Principal</a>
+          </li>
+          <li>
+            <a href="./catalogo.html" target="_blank">Catalogo</a>
+          </li>
+          <li><a href="./reserva.html" target="_blank">Reserva</a></li>
+          <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
+          <li>
+            <a href="./contacto.html" target="_blank">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+      >
+        <g fill="none" stroke="#000" stroke-width="1.5">
+          <circle cx="12" cy="9" r="3" />
+          <circle cx="12" cy="12" r="10" />
+          <path
+            stroke-linecap="round"
+            d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+          />
+        </g>
+      </svg>
+    </header>
+    <main>
+      <section>
+        <h2>Catalogo de Biblioteca</h2>
+        <p>
+          Explora nuestra colección academia de recursos digitales e impresos.
+          Accede a miles de volúmenes especializados.
+        </p>
+      </section>
+      <section>
+        <form action="">
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="#000"
+                d="m229.66 218.34l-50.07-50.06a88.11 88.11 0 1 0-11.31 11.31l50.06 50.07a8 8 0 0 0 11.32-11.32M40 112a72 72 0 1 1 72 72a72.08 72.08 0 0 1-72-72"
+              />
+            </svg>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Buscar por titulo, autor o ISBN..."
+            />
+          </div>
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 6h18M6 12h12m-9 6h6"
+              />
+            </svg>
+            <select name="" id="">
+              <option value="">Todas las categorías</option>
+              <option value="">Terror</option>
+              <option value="">Acción</option>
+              <option value="">Romance</option>
+            </select>
+          </div>
+          <button>Buscar</button>
+        </form>
+      </section>
+      <!--Contenedor de cartas de libros-->
+      <section>
+        <section>
+          <article>
+            <figure>
+              <img
+                src="./Images/Img_libros/Fundamentos_algoritmia.jpg"
+                alt="Imagen de libro fundamentos de algoritmia"
+              />
+            </figure>
+            <div class="">
+              <p>Ciencias</p>
+              <div class="">
+                <h3>Fundamentos de Algoritmia</h3>
+                <p>G. Brassard - P. Bradley</p>
+              </div>
+              <div class="">
+                <span>
+                  <p>ISBN:</p>
+                  <p>97B-D26033348</p>
+                </span>
+                <span>
+                  <p>Estado:</p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#000"
+                        d="M12 17a5 5 0 1 1 0-10a5 5 0 0 1 0 10Z"
+                      /></svg
+                    >Disponible
+                  </p>
+                </span>
+              </div>
+            </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M6 6.2c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C7.52 3 8.08 3 9.2 3h5.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C18 4.52 18 5.08 18 6.2v13.305c0 .486 0 .729-.101.862a.5.5 0 0 1-.37.198c-.167.01-.369-.125-.773-.394L12 17l-4.756 3.17c-.404.27-.606.405-.774.395a.5.5 0 0 1-.369-.198C6 20.234 6 19.991 6 19.505z"
+                /></svg
+              >Reservar
+            </button>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="./Images/Img_libros/Historia_del_arte.png"
+                alt="Imagen de libro fundamentos de algoritmia"
+              />
+            </figure>
+            <div class="">
+              <p>Arte</p>
+              <div class="">
+                <h3>Historia del Arte</h3>
+                <p>C. Millan</p>
+              </div>
+              <div class="">
+                <span>
+                  <p>ISBN:</p>
+                  <p>45A-G56317299</p>
+                </span>
+                <span>
+                  <p>Estado:</p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#000"
+                        d="M12 17a5 5 0 1 1 0-10a5 5 0 0 1 0 10Z"
+                      /></svg
+                    >Disponible
+                  </p>
+                </span>
+              </div>
+            </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000"
+                  stroke="#000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M6 6.2c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C7.52 3 8.08 3 9.2 3h5.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C18 4.52 18 5.08 18 6.2v13.305c0 .486 0 .729-.101.862a.5.5 0 0 1-.37.198c-.167.01-.369-.125-.773-.394L12 17l-4.756 3.17c-.404.27-.606.405-.774.395a.5.5 0 0 1-.369-.198C6 20.234 6 19.991 6 19.505z"
+                /></svg
+              >Reservar
+            </button>
+          </article>
+        </section>
+        <div class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="#000"
+              stroke-dasharray="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l5 -5M9 12l5 5"
+            >
+              <animate
+                fill="freeze"
+                attributeName="stroke-dashoffset"
+                dur="0.4s"
+                values="10;0"
+              />
+            </path>
+          </svg>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="#000"
+              stroke-dasharray="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 12l-5 -5M15 12l-5 5"
+            >
+              <animate
+                fill="freeze"
+                attributeName="stroke-dashoffset"
+                dur="0.4s"
+                values="10;0"
+              />
+            </path>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="">
+        <h2>University Library</h2>
+        <p>&copy; 2025 University Library Todos los derechos reservados</p>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Política de privacidad</a>
+        </li>
+        <li>
+          <a href="#">Términos de servicio</a>
+        </li>
+        <li>
+          <a href="#">Accesibilidad</a>
+        </li>
+        <li>
+          <a href="#">Mapa de la biblioteca</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

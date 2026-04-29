@@ -3,27 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Home</title>
   </head>
   <body>
     <header>
-      <h1>Bienvenido a la biblioteca IUD</h1>
+      <h1>University Library</h1>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/contacto.html">Contacto</a></li>
-          <li><a href="/catalogo.html">Catalogo</a></li>
-          <li><a href="/nosotros.html">Nosotros</a></li>
-          <li><a href="/reserva.html">Reserva</a></li>
+          <li>
+            <a href="./index.html" target="_blank">Principal</a>
+          </li>
+          <li>
+            <a href="./catalogo.html" target="_blank">Catalogo</a>
+          </li>
+          <li><a href="./reserva.html" target="_blank">Reserva</a></li>
+          <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
+          <li>
+            <a href="./contacto.html" target="_blank">Contacto</a>
+          </li>
         </ul>
       </nav>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+      >
+        <g fill="none" stroke="#000" stroke-width="1.5">
+          <circle cx="12" cy="9" r="3" />
+          <circle cx="12" cy="12" r="10" />
+          <path
+            stroke-linecap="round"
+            d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+          />
+        </g>
+      </svg>
     </header>
     <main>
-      <div class="">
-        <img src="" alt="" />
-
-        <p></p>
-      </div>
+      <!--Hero-->
+      <section>
+        <div class="">
+          <h2>Portal de la biblioteca Universitaria</h2>
+          <p>
+            Tu puerta de acceso al conocimiento global. ofrecemos recursos
+            digitales y físicos, espacios de estudio y asesoramiento
+            especializado para potenciar tu investigación académica.
+          </p>
+          <div class="">
+            <button>Explorar Catalogo</button>
+            <button>Mi Cuenta</button>
+          </div>
+        </div>
+      </section>
+      <!--Servicios destacados-->
+      <section>
+        <h2>Servicios Destacados</h2>
+        <section>
+          <!--Carta de consulta-->
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 15 15"
+            >
+              <path
+                fill="#000"
+                d="M1.082 9.939C.987 9.867 1 9.748 1 9.748L1.526 3.5s.008-.069.039-.104c.019-.022.043-.054.09-.073C2.182 3.107 5.053 1.552 6.5 3c.24.278.5.688.5 1v5.288s.006.112-.095.18a.25.25 0 0 1-.242.003c-2.226-1.114-4.711.154-5.338.487a.22.22 0 0 1-.243-.02m12.593.019c-.627-.333-3.112-1.6-5.338-.487a.25.25 0 0 1-.242-.003C7.994 9.4 8 9.288 8 9.288V4c0-.312.26-.722.5-1c1.446-1.448 4.3.107 4.827.323c.046.019.07.051.09.073c.03.035.039.104.039.104l.543 6.248s.014.119-.08.19a.22.22 0 0 1-.244.02m-4.81 2.728a.24.24 0 0 0 .118-.077a.2.2 0 0 0 .042-.109c.05-.938 1.624-1.812 4.648-.03c.077.044.166.04.242-.015c.086-.063.085-.17.085-.17v-.553s0-.077-.027-.119a.23.23 0 0 0-.093-.085c-2.025-1.315-4.586-1.898-5.885-.16a.2.2 0 0 1-.073.09c-.057.045-.126.042-.126.042h-.585s-.07.003-.126-.041a.2.2 0 0 1-.073-.09c-1.3-1.739-3.86-1.184-5.885.131a.23.23 0 0 0-.093.086c-.027.042-.027.118-.027.118v.554s-.001.107.085.17a.22.22 0 0 0 .243.015c3.023-1.782 4.598-.88 4.647.057a.2.2 0 0 0 .043.109a.24.24 0 0 0 .118.077c.721.18 1.768.25 2.722 0"
+              />
+            </svg>
+            <div class="">
+              <h3>Consulta de Catalogo</h3>
+              <p>
+                Accede a mas de 500,000 volúmenes físicos y nuestra extensa base
+                de datos digital de artículos científicos.
+              </p>
+            </div>
+            <span>
+              <a href="./catalogo.html">Ir al catalogo</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="#000"
+                  d="m18.72 6.78l-1.44 1.44L24.063 15H4v2h20.063l-6.782 6.78l1.44 1.44l8.5-8.5l.686-.72l-.687-.72z"
+                />
+              </svg>
+            </span>
+          </div>
+          <!--Carta de reserva-->
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#000"
+                d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"
+              />
+              <path
+                fill="#000"
+                d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2M19 8l.001 12H5V8z"
+              />
+            </svg>
+            <div class="">
+              <h3>Reserva de materiales</h3>
+              <p>
+                Asegura tus libros o salas de estudio grupal con antelación
+                desde cualquier dispositivo.
+              </p>
+            </div>
+          </div>
+          <!--Carta de renovación-->
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 18A10 10 0 1 0 2.9 7.9M2 4v4h4m6-1v5l3 3"
+              />
+            </svg>
+            <div class="">
+              <h3>Renovación de prestamos</h3>
+              <p>
+                Extiende el tiempo de tus prestamos vigentes de forma rápida y
+                sencilla son venir a la biblioteca.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--Gestión recursos-->
+      <section>
+        <div class="">
+          <div class="">
+            <h2>Gestión de recursos</h2>
+            <p>
+              Acceso directo a gestores bibliográficos, repositorios
+              institucionales y asesorías para tesis y proyectos de
+              investigación
+            </p>
+          </div>
+          <button>Gestionar ahora</button>
+        </div>
+        <div class="">
+          <article>
+            <h2>Horarios</h2>
+            <div class="">
+              <span
+                ><p>Lunes-Viernes</p>
+                <p>08:00-21:00</p></span
+              >
+              <span
+                ><p>Sábados</p>
+                <p>09:00-14:00</p></span
+              >
+              <span
+                ><p>Domingos</p>
+                <p>Cerrado</p></span
+              >
+            </div>
+          </article>
+          <article>
+            <h2>Novedades</h2>
+            <div class="">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 32 32"
+                >
+                  <g fill="none" stroke="#000">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 9h4m-4 7h12m-12 4h12m-12 4h4m-6 5h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2"
+                    />
+                    <circle cx="22" cy="9" r=".5" fill="#000" />
+                  </g>
+                </svg>
+                <span>
+                  <p>Nueva base de datos IEEE</p>
+                  <p>Disponible desde hoy para ingenieros</p>
+                </span>
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 26 26"
+                >
+                  <path
+                    fill="#000"
+                    d="M12.031 1.063c-.321.001-.676.145-1 .468L5.312 8H1c-.551 0-1 .449-1 1v8c0 .551.449 1 1 1h4.313L11 24.438c1 1 2 .488 2-.875V2.28c0-.791-.433-1.222-.969-1.219zm7.25 2a1 1 0 0 0-.218 1.906A8.96 8.96 0 0 1 24 13c0 3.524-2 6.55-4.938 8.031a1 1 0 1 0 .875 1.782C23.53 21 26 17.288 26 13s-2.471-8-6.063-9.813a1 1 0 0 0-.562-.124a1 1 0 0 0-.094 0m-2.375 3.874a1 1 0 0 0-.406 1.875C18.043 9.771 19 11.29 19 13c0 1.722-.972 3.261-2.531 4.219a1 1 0 1 0 1.062 1.687C19.601 17.636 21 15.476 21 13c0-2.461-1.387-4.633-3.438-5.906A1 1 0 0 0 17 6.937a1 1 0 0 0-.094 0"
+                  />
+                </svg>
+                <span>
+                  <p>Taller de APA 7ma Ed.</p>
+                  <p>Inscripciones abiertas para el viernes</p>
+                </span>
+              </span>
+            </div>
+          </article>
+          <article>
+            <h2>Contacto Rápido</h2>
+            <p>¿Necesitas ayuda con tu búsqueda?</p>
+            <div class="">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000"
+                    d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
+                  />
+                </svg>
+                <p>biblioreferencia@univ.edu</p>
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#000"
+                    d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+                <p>+34 900 123 465</p>
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="">
+        <h2>University Library</h2>
+        <p>&copy; 2025 University Library Todos los derechos reservados</p>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Política de privacidad</a>
+        </li>
+        <li>
+          <a href="#">Términos de servicio</a>
+        </li>
+        <li>
+          <a href="#">Accesibilidad</a>
+        </li>
+        <li>
+          <a href="#">Mapa de la biblioteca</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
