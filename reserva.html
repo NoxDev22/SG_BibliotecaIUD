@@ -3,47 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/pages.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <title>Reserva</title>
   </head>
   <body>
-    <header>
-      <h1>University Library</h1>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html" target="_blank">Principal</a>
-          </li>
-          <li>
-            <a href="./catalogo.html" target="_blank">Catalogo</a>
-          </li>
-          <li>
-            <a href="./reserva.html" target="_blank">Reserva</a>
-          </li>
-          <li><a href="./nosotros.html" target="_blank">Nosotros</a></li>
-          <li>
-            <a href="./contacto.html" target="_blank">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="50"
-        height="50"
-        viewBox="0 0 24 24"
-      >
-        <g fill="none" stroke="#000" stroke-width="1.5">
-          <circle cx="12" cy="9" r="3" />
-          <circle cx="12" cy="12" r="10" />
-          <path
-            stroke-linecap="round"
-            d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
-          />
-        </g>
-      </svg>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__logo">University Library</h1>
+        <div class="header__menuIcon"></div>
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <h2 class="header__logo">University Library</h2>
+            <li class="header__navLi">
+              <a href="./index.html" class="header__navLink">Principal</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./catalogo.html" class="header__navLink">Catalogo</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./reserva.html" class="header__navLink">Reserva</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./nosotros.html" class="header__navLink">Nosotros</a>
+            </li>
+            <li>
+              <a href="./contacto.html" class="header__navLink">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          class="header__userIcon"
+        >
+          <g fill="none" stroke="#001125" stroke-width="1.5">
+            <circle cx="12" cy="9" r="3" />
+            <circle cx="12" cy="12" r="10" />
+            <path
+              stroke-linecap="round"
+              d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+            />
+          </g>
+        </svg>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <div class="">
         <h2>Academic Excellence Start Here</h2>
         <p>
@@ -148,25 +158,26 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="">
-        <h2>University Library</h2>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h2 class="footer__logo">University Library</h2>
+        <ul class="footer__list">
+          <li class="footer__li">
+            <a href="#" class="footer__link">Política de privacidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Términos de servicio</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Accesibilidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Mapa de la biblioteca</a>
+          </li>
+        </ul>
         <p>&copy; 2025 University Library Todos los derechos reservados</p>
       </div>
-      <ul>
-        <li>
-          <a href="#">Política de privacidad</a>
-        </li>
-        <li>
-          <a href="#">Términos de servicio</a>
-        </li>
-        <li>
-          <a href="#">Accesibilidad</a>
-        </li>
-        <li>
-          <a href="#">Mapa de la biblioteca</a>
-        </li>
-      </ul>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
 </html>

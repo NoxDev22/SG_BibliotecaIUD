@@ -1,0 +1,8 @@
+.btn__blue {
+  width: 190px;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(16, 16, 85);
+  border: none;
+}
