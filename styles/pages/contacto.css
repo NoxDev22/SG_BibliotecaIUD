@@ -1,0 +1,216 @@
+@import "./utils.cs";
+
+
+/*contacto.html*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+}
+
+
+body {
+    background-color: var(--c-neutral); 
+}
+
+.title_contact_us{
+  margin-top: 20px;
+}
+
+.seccion-contacto-global {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;      
+    margin: 40px auto;         
+    padding: 20px;
+}
+
+
+.contact_container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%;
+}
+
+.ways_of_contact {
+    background-color: var(--c-neutral);
+    border: 1px solid var(--c-secondary-light);
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    gap: 20px;
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap;   
+    align-items: flex-start;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ways_of_contact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 188, 212, 0.3);
+}
+
+.box_icon {
+    background-color: var(--c-primary); 
+    border-radius: 10px;
+    padding: 12px;
+    height: 48px;
+    width: 48px;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.box_icon svg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.target_text {
+    flex: 1; 
+    word-break: break-word; 
+    overflow-wrap: anywhere;
+}
+
+.target_text h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--c-text-main);
+    margin-bottom: 6px;
+}
+
+.normal_text {
+    font-size: 0.9rem;
+    color: var(--c-secondary);
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.target_text p:last-child b {
+    font-weight: 600;
+    color: var(--c-primary-extra-light); 
+}
+
+
+.formulario-contacto {
+    background-color: var(--c-neutral);
+    border: 1px solid var(--c-secondary-light);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contacto h2 {
+    font-size: 1.5rem;
+    color: var(--c-text-main);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulario-contacto label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--c-secondary-light) ;
+    margin-bottom: -10px; 
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    border: 1px solid var(--c-primary);
+    border-radius: 8px;
+    background-color: var(--c-neutral);
+    color: var(--c-secondary);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.formulario-contacto select {
+    cursor: pointer;
+    appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23475569'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    border-color: var(--c-primary-light);
+    background-color: var(--c-neutral);
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.15);
+}
+
+.formulario-contacto .btn__blue {
+    background-color: var(--c-primary);
+    color: var(--c-neutral);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.formulario-contacto .btn__blue:hover {
+    background-color: #11385c;
+}
+
+.formulario-contacto .btn__blue:active {
+    transform: scale(0.98);
+}
+
+.formulario-contacto .tiempo-respuesta {
+    font-size: 0.85rem;
+    color: var(--c-secondary);
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid var(--c-secondary-light);
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 992px) {
+    .seccion-contacto-global {
+        flex-direction: row;       
+        align-items: flex-start;   
+    }
+
+    .contact_container {
+        flex: 4;
+    }
+
+    .formulario-contacto {
+        flex: 6; 
+    }
+}
+
+/*FIN contacto.html*/
