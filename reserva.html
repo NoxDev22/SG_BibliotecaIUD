@@ -6,15 +6,33 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/pages.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/pages/reserve.css" />
+    <link rel="stylesheet" href="./styles/responsive/r-reserve.css" />
     <title>Reserva</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <h1 class="header__logo">University Library</h1>
-        <div class="header__menuIcon"></div>
+        <div class="header__contIcons">
+          <div class="header__menuIcon"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            class="header__userIcon"
+          >
+            <g fill="none" stroke="#001125" stroke-width="1.5">
+              <circle cx="12" cy="9" r="3" />
+              <circle cx="12" cy="12" r="10" />
+              <path
+                stroke-linecap="round"
+                d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+              />
+            </g>
+          </svg>
+        </div>
         <nav class="header__nav">
           <ul class="header__navList">
             <h2 class="header__logo">University Library</h2>
@@ -30,126 +48,144 @@
             <li class="header__navLi">
               <a href="./nosotros.html" class="header__navLink">Nosotros</a>
             </li>
-            <li>
+            <li class="header__navLi">
               <a href="./contacto.html" class="header__navLink">Contacto</a>
             </li>
           </ul>
         </nav>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          class="header__userIcon"
-        >
-          <g fill="none" stroke="#001125" stroke-width="1.5">
-            <circle cx="12" cy="9" r="3" />
-            <circle cx="12" cy="12" r="10" />
-            <path
-              stroke-linecap="round"
-              d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
-            />
-          </g>
-        </svg>
       </div>
     </header>
-    <main class="container">
-      <div class="">
-        <h2>Academic Excellence Start Here</h2>
-        <p>
-          Secure yor learning materials ahead of time. Our reservation system
-          ensures that the knowledge you need is ready you are.
+    <main class="reserve container">
+      <div class="reserve__containerInfo">
+        <h2 class="reserve__infoTitle">
+          La excelencia académica comienza aquí.
+        </h2>
+        <p class="reserve__infoDescription">
+          Reserva tus materiales de estudio con antelación. Nuestro sistema de
+          reservas garantiza que el conocimiento que necesitas esté listo cuando
+          lo necesites.
         </p>
-        <img src="./Images/Img-biblioteca.jpg" alt="" />
+        <picture class="reserve__infoPicture">
+          <img
+            src="./Images/img_pages/Img-biblioteca.jpg"
+            alt="Imagen de una biblioteca"
+            class="reserve__infoImg"
+          />
+        </picture>
       </div>
-      <section>
-        <div class="">
-          <div class="">
+      <section class="reserve__containerReserve">
+        <div class="reserve__contReserveForm">
+          <div class="reserve__contHeader">
             <h2>Reserva de libros</h2>
-            <p>
+            <p class="reserve__contHeaderTxt">
               Completa el formulario a continuación para reservar un ejemplar
               físico de nuestra colección
             </p>
           </div>
-
-          <form>
-            <div class="">
-              <label for="usuario">Usuario:</label>
+          <form class="reserve__contForm">
+            <div class="reserve__contFormGroup">
+              <label for="usuario" class="reserve__contFormLabel"
+                >Usuario:</label
+              >
               <input
                 type="text"
                 id="usuario"
                 placeholder="Ingrese su nombre de usuario"
+                class="reserve__contFormInputText"
               />
             </div>
-            <div class="">
-              <label for="s_libro">Selección de libro:</label>
+            <div class="reserve__contFormGroup">
+              <label for="s_libro" class="reserve__contFormLabel"
+                >Selección de libro:</label
+              >
               <input
                 type="text"
                 id="s_libro"
                 placeholder="Ingrese el nombre o ISBN del libro"
+                class="reserve__contFormInputText"
               />
             </div>
-            <div class="">
+            <div class="reserve__contFormGroup">
               <label for="correo">Correo electrónico:</label>
               <input
                 type="email"
                 id="correo"
                 placeholder="example@example.com"
+                class="reserve__contFormInputText"
               />
             </div>
-            <div class="">
-              <label for="correo">Tiempo de reserva:</label>
-              <select>
-                <option value="">Tiempo en meses</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-              </select>
+            <div class="reserve__contFormGroup">
+              <label for="correo">Fecha de Inicio:</label>
+              <small class="reserve__contFormSmall"
+                >Recuerde que la respuesta a la solicitud de reserva puede
+                tardar hasta 24 horas hábiles.</small
+              >
+              <input type="date" class="reserve__contFormInputDate" />
             </div>
-            <button>Reservar</button>
+            <div class="reserve__contFormGroup">
+              <label for="correo">Fecha de Devolución:</label>
+              <small class="reserve__contFormSmall"
+                >El plazo máximo para una reserva es de 4 meses.</small
+              >
+              <input type="date" class="reserve__contFormInputDate" />
+            </div>
+            <div class="reserve__contFormGroup">
+              <label for="correo">Tiempo de reserva:</label>
+              <input type="text" class="reserve__contFormInputEnable" />
+            </div>
+            <button class="btn__blue reserve__contFormBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+                /></svg
+              >Reservar
+            </button>
           </form>
         </div>
-
-        <div class="">
-          <article>
+        <div class="reserve__contInformation">
+          <article class="reserve__contInfoCard">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
+              width="40"
+              height="40"
               viewBox="0 0 24 24"
+              class="reserve__contInfoIcon"
             >
               <path
-                fill="#000"
+                fill="#001125"
                 d="M11 17h2v-6h-2zm1.713-8.287Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
               />
             </svg>
-            <div>
+            <div class="reserve__contInfoTexts">
               <h3>Información</h3>
-              <p>
+              <p class="reserve__contInfoDescription">
                 Las reservas se mantienen activas por un máximo de 48 horas tras
                 la fecha seleccionada.
               </p>
             </div>
           </article>
-
-          <article>
+          <article class="reserve__contInfoCard">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
+              width="40"
+              height="40"
               viewBox="0 0 24 24"
+              class="reserve__contInfoIcon"
             >
               <path
-                fill="#000"
+                fill="#001125"
                 d="M11 21v-2h8v-7.1q0-2.925-2.037-4.962T12 4.9T7.038 6.938T5 11.9V18H2v-5.725h1l.075-1.325q.2-1.7.988-3.15t1.975-2.525T8.762 3.6T12 3t3.225.6t2.725 1.663t1.975 2.512t1 3.15l.075 1.35h1V18h-1v3zm-2.713-7.287Q8 13.425 8 13t.288-.712T9 12t.713.288T10 13t-.288.713T9 14t-.712-.288m6 0Q14 13.426 14 13t.288-.712T15 12t.713.288T16 13t-.288.713T15 14t-.712-.288M6.025 12.45Q5.85 9.8 7.625 7.9T12.05 6q2.225 0 3.913 1.413T18 11.025Q15.725 11 13.813 9.8t-2.938-3.25q-.4 2-1.687 3.563T6.025 12.45"
               />
             </svg>
-            <div>
+            <div class="reserve__contInfoTexts">
               <h3>Ayuda</h3>
-              <p>
+              <p class="reserve__contInfoDescription">
                 ¿Tienes problemas?. Contacta con el personal de mostrador o
                 llama al 01800076842459
               </p>

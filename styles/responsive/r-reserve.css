@@ -1,0 +1,19 @@
+@media (min-width: 767px) {
+  .reserve__contInformation {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+  }
+}
+
+@media (min-width: 995px) {
+  .reserve {
+    grid-template-columns: minmax(410px, 440px) minmax(370px, 560px);
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1120px) {
+  .reserve {
+    gap: 1.5rem;
+  }
+}

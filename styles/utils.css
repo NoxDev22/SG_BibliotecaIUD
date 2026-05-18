@@ -4,8 +4,11 @@
   --c-primary-extra-light: #465f88;
   --c-secondary: #444749;
   --c-secondary-light: #757779;
+  --c-secondary-extra-light: #d4d4d483;
   --c-tertiary: #64748b;
   --c-tertiary-dark: #0b1c30;
   --c-tertiary-light: #cfdcf1;
   --c-neutral: #ffffff;
+  --c-green: #239700;
+  --c-red: #970032;
 }

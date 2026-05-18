@@ -1,0 +1,160 @@
+@import "./utils.css";
+
+.hero {
+  background-image:
+    linear-gradient(0deg, rgba(1, 10, 34, 0.7), rgba(2, 10, 34, 0.7)),
+    url("../../Images/img_pages/img-heroIndex.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 18px 24px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.hero__texts {
+  display: grid;
+  gap: 1.2rem;
+}
+.hero__title {
+  font-size: 2rem;
+  color: var(--c-neutral);
+}
+.hero__description {
+  color: var(--c-tertiary-light);
+}
+.hero__btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-primary);
+  background-color: var(--c-neutral);
+}
+
+/*Services Styles*/
+.services__title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+.services__contCards {
+  display: grid;
+  grid-template-rows: repeat(4, 240px);
+  gap: 1rem;
+}
+.services__card {
+  position: relative;
+  display: grid;
+  grid-template-rows: 50px 80px 45px;
+  align-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--c-secondary-light);
+  border-radius: 5px;
+}
+.services__textCardLastChild {
+  grid-row: 2/3;
+}
+
+.services__textsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services__iconCard {
+  width: 3rem;
+  padding: 0 10px;
+  background-color: var(--c-secondary-extra-light);
+  border-radius: 4px;
+}
+.services__titleCard {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.services__textCard {
+  color: var(--c-secondary);
+}
+.services__contLinksCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.services__linkCard {
+  color: var(--c-primary);
+}
+.services__iconLinkCard {
+  width: 24px;
+}
+.services__btnCard {
+  grid-row: 3/4;
+  height: 100%;
+}
+
+/*Manage Styles*/
+.manage {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.manage__title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+.manage__contCards {
+  display: grid;
+  gap: 1.1rem;
+}
+.manage__card {
+  display: grid;
+  gap: 10px;
+  padding: 1rem;
+  border: 1px solid var(--c-tertiary);
+  border-radius: 5px;
+}
+.manage__cardTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--c-secondary-extra-light);
+}
+.manage__cardSchedules {
+  display: grid;
+  gap: 10px;
+}
+.manage__cardSchedulesCont {
+  display: flex;
+  justify-content: space-between;
+}
+.manage__cardSchedulesDay {
+  color: var(--c-secondary);
+}
+/*Card two*/
+.manage__cardFeatures {
+  display: grid;
+  gap: 14px;
+}
+.manage__cardFeatureCont {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.manage__cardFeatureIcon {
+  width: 2rem;
+}
+.manage__cardFeatureTexts {
+  display: grid;
+  gap: 3px;
+  font-size: 0.9rem;
+}
+.manage__cardFeatureText {
+  font-weight: 700;
+}
+/*Card Three*/
+.manage__cardText {
+  color: var(--c-secondary);
+}
+.manage__cardContactCont {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.manage__cardContactsIcon {
+  width: 2rem;
+}
