@@ -6,15 +6,33 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/pages.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/pages/index.css" />
+    <link rel="stylesheet" href="./styles/responsive/r-index.css" />
     <title>Home</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <h1 class="header__logo">University Library</h1>
-        <div class="header__menuIcon"></div>
+        <div class="header__contIcons">
+          <div class="header__menuIcon"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            class="header__userIcon"
+          >
+            <g fill="none" stroke="#001125" stroke-width="1.5">
+              <circle cx="12" cy="9" r="3" />
+              <circle cx="12" cy="12" r="10" />
+              <path
+                stroke-linecap="round"
+                d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+              />
+            </g>
+          </svg>
+        </div>
         <nav class="header__nav">
           <ul class="header__navList">
             <h2 class="header__logo">University Library</h2>
@@ -30,76 +48,61 @@
             <li class="header__navLi">
               <a href="./nosotros.html" class="header__navLink">Nosotros</a>
             </li>
-            <li>
+            <li class="header__navLi">
               <a href="./contacto.html" class="header__navLink">Contacto</a>
             </li>
           </ul>
         </nav>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          class="header__userIcon"
-        >
-          <g fill="none" stroke="#001125" stroke-width="1.5">
-            <circle cx="12" cy="9" r="3" />
-            <circle cx="12" cy="12" r="10" />
-            <path
-              stroke-linecap="round"
-              d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
-            />
-          </g>
-        </svg>
       </div>
     </header>
     <main class="container">
       <!--Hero-->
-      <section>
-        <div class="">
-          <h2>Portal de la biblioteca Universitaria</h2>
-          <p>
+      <section class="hero">
+        <div class="hero__texts">
+          <h2 class="hero__title">Portal de la biblioteca Universitaria</h2>
+          <p class="hero__description">
             Tu puerta de acceso al conocimiento global. ofrecemos recursos
             digitales y físicos, espacios de estudio y asesoramiento
             especializado para potenciar tu investigación académica.
           </p>
-          <div class="">
-            <button>Explorar Catalogo</button>
-            <button>Mi Cuenta</button>
-          </div>
+          <button class="btn__blue hero__btn">Explorar Catalogo</button>
         </div>
       </section>
       <!--Servicios destacados-->
-      <section>
-        <h2>Servicios Destacados</h2>
-        <section>
+      <section class="services">
+        <h2 class="services__title">Servicios Destacados</h2>
+        <section class="services__contCards">
           <!--Carta de consulta-->
-          <div class="">
+          <div class="services__card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               viewBox="0 0 15 15"
+              class="services__iconCard"
             >
               <path
-                fill="#000"
+                fill="#001125"
                 d="M1.082 9.939C.987 9.867 1 9.748 1 9.748L1.526 3.5s.008-.069.039-.104c.019-.022.043-.054.09-.073C2.182 3.107 5.053 1.552 6.5 3c.24.278.5.688.5 1v5.288s.006.112-.095.18a.25.25 0 0 1-.242.003c-2.226-1.114-4.711.154-5.338.487a.22.22 0 0 1-.243-.02m12.593.019c-.627-.333-3.112-1.6-5.338-.487a.25.25 0 0 1-.242-.003C7.994 9.4 8 9.288 8 9.288V4c0-.312.26-.722.5-1c1.446-1.448 4.3.107 4.827.323c.046.019.07.051.09.073c.03.035.039.104.039.104l.543 6.248s.014.119-.08.19a.22.22 0 0 1-.244.02m-4.81 2.728a.24.24 0 0 0 .118-.077a.2.2 0 0 0 .042-.109c.05-.938 1.624-1.812 4.648-.03c.077.044.166.04.242-.015c.086-.063.085-.17.085-.17v-.553s0-.077-.027-.119a.23.23 0 0 0-.093-.085c-2.025-1.315-4.586-1.898-5.885-.16a.2.2 0 0 1-.073.09c-.057.045-.126.042-.126.042h-.585s-.07.003-.126-.041a.2.2 0 0 1-.073-.09c-1.3-1.739-3.86-1.184-5.885.131a.23.23 0 0 0-.093.086c-.027.042-.027.118-.027.118v.554s-.001.107.085.17a.22.22 0 0 0 .243.015c3.023-1.782 4.598-.88 4.647.057a.2.2 0 0 0 .043.109a.24.24 0 0 0 .118.077c.721.18 1.768.25 2.722 0"
               />
             </svg>
-            <div class="">
-              <h3>Consulta de Catalogo</h3>
-              <p>
+            <div class="services__textsCard">
+              <h3 class="services__titleCard">Consulta de Catalogo</h3>
+              <p class="services__textCard">
                 Accede a mas de 500,000 volúmenes físicos y nuestra extensa base
                 de datos digital de artículos científicos.
               </p>
             </div>
-            <span>
-              <a href="./catalogo.html">Ir al catalogo</a>
+            <span class="services__contLinksCard">
+              <a href="./catalogo.html" class="services__linkCard"
+                >Ir al catalogo</a
+              >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
                 height="50"
                 viewBox="0 0 32 32"
+                class="services__iconLinkCard"
               >
                 <path
                   fill="#000"
@@ -109,159 +112,184 @@
             </span>
           </div>
           <!--Carta de reserva-->
-          <div class="">
+          <div class="services__card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               viewBox="0 0 24 24"
+              class="services__iconCard"
             >
               <path
-                fill="#000"
+                fill="#001125"
                 d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"
               />
               <path
-                fill="#000"
+                fill="#001125"
                 d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2M19 8l.001 12H5V8z"
               />
             </svg>
-            <div class="">
-              <h3>Reserva de materiales</h3>
-              <p>
+            <div class="services__textsCard">
+              <h3 class="services__titleCard">Reserva de materiales</h3>
+              <p class="services__textCard">
                 Asegura tus libros o salas de estudio grupal con antelación
                 desde cualquier dispositivo.
               </p>
             </div>
           </div>
           <!--Carta de renovación-->
-          <div class="">
+          <div class="services__card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               viewBox="0 0 24 24"
+              class="services__iconCard"
             >
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#001125"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
                 d="M4 18A10 10 0 1 0 2.9 7.9M2 4v4h4m6-1v5l3 3"
               />
             </svg>
-            <div class="">
-              <h3>Renovación de prestamos</h3>
-              <p>
+            <div class="services__textsCard">
+              <h3 class="services__titleCard">Renovación de prestamos</h3>
+              <p class="services__textCard">
                 Extiende el tiempo de tus prestamos vigentes de forma rápida y
                 sencilla son venir a la biblioteca.
               </p>
             </div>
           </div>
+          <div class="services__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              class="services__iconCard"
+            >
+              <g fill="#001125" fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                  d="M8.25 18a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75"
+                />
+                <path
+                  d="M8.7 1.25h6.6c.22 0 .389 0 .536.016A2.75 2.75 0 0 1 18.29 3.87a2.89 2.89 0 0 1 2.054 2.721c.601.18 1.12.465 1.544.923c.652.705.854 1.572.862 2.586c.007.975-.166 2.207-.382 3.736l-.44 3.114c-.168 1.196-.305 2.168-.518 2.929c-.223.797-.552 1.452-1.16 1.956c-.604.5-1.32.715-2.166.817c-.819.098-1.849.098-3.13.098H9.046c-1.282 0-2.312 0-3.13-.098c-.847-.102-1.563-.317-2.167-.817c-.608-.504-.937-1.16-1.16-1.956c-.213-.761-.35-1.733-.519-2.93l-.439-3.113c-.215-1.53-.39-2.761-.382-3.736c.008-1.014.21-1.881.862-2.586c.424-.458.942-.742 1.543-.923a2.89 2.89 0 0 1 2.055-2.72a2.75 2.75 0 0 1 2.454-2.605c.147-.016.316-.016.535-.016m-3.51 5.078c.926-.078 2.06-.078 3.427-.078h6.768c1.366 0 2.5 0 3.427.078a1.38 1.38 0 0 0-1.35-1.078H6.539c-.669 0-1.212.47-1.349 1.078m10.487-3.57c.55.058.985.468 1.092.992H7.232a1.25 1.25 0 0 1 1.092-.993c.056-.006.136-.007.417-.007h6.518c.28 0 .36.001.417.007M3.213 8.532c.303-.327.758-.544 1.643-.662c.901-.12 2.108-.121 3.816-.121h6.656c1.708 0 2.915.002 3.816.121c.885.118 1.34.335 1.643.662c.296.32.457.755.463 1.579c.006.85-.15 1.97-.376 3.576l-.423 3c-.178 1.261-.302 2.133-.485 2.787c-.177.63-.384.965-.673 1.204c-.293.244-.687.4-1.388.484c-.719.086-1.658.087-3 .087h-5.81c-1.342 0-2.281-.001-3-.087c-.7-.085-1.095-.24-1.388-.483c-.289-.24-.496-.576-.673-1.205c-.183-.654-.307-1.526-.485-2.787l-.423-3c-.226-1.605-.382-2.726-.376-3.576c.006-.824.167-1.26.463-1.579"
+                />
+              </g>
+            </svg>
+            <div class="services__textsCard services__textCardLastChild">
+              <h3 class="services__titleCard">Gestión de recursos</h3>
+              <p class="services__textCard">
+                Acceso directo a gestores bibliográficos, repositorios
+                institucionales y asesorías para tesis y proyectos de
+                investigación.
+              </p>
+            </div>
+            <button class="btn__blue services__btnCard">Gestionar ahora</button>
+          </div>
         </section>
       </section>
       <!--Gestión recursos-->
-      <section>
-        <div class="">
-          <div class="">
-            <h2>Gestión de recursos</h2>
-            <p>
-              Acceso directo a gestores bibliográficos, repositorios
-              institucionales y asesorías para tesis y proyectos de
-              investigación
-            </p>
-          </div>
-          <button class="btn__blue">Gestionar ahora</button>
-        </div>
-        <div class="">
-          <article>
-            <h2>Horarios</h2>
-            <div class="">
-              <div>
-                <p>Lunes-Viernes</p>
+      <section class="manage">
+        <h2 class="manage__title">Mas Información</h2>
+        <div class="manage__contCards">
+          <article class="manage__card">
+            <h2 class="manage__cardTitle">Horarios</h2>
+            <div class="manage__cardSchedules">
+              <div class="manage__cardSchedulesCont">
+                <p class="manage__cardSchedulesDay">Lunes-Viernes</p>
                 <p>08:00-21:00</p>
               </div>
-              <div>
-                <p>Sábados</p>
+              <div class="manage__cardSchedulesCont">
+                <p class="manage__cardSchedulesDay">Sábados</p>
                 <p>09:00-14:00</p>
               </div>
-              <div>
-                <p>Domingos</p>
+              <div class="manage__cardSchedulesCont">
+                <p class="manage__cardSchedulesDay">Domingos</p>
                 <p>Cerrado</p>
               </div>
             </div>
           </article>
-          <article>
-            <h2>Novedades</h2>
-            <div class="">
-              <div>
+          <article class="manage__card">
+            <h2 class="manage__cardTitle">Novedades</h2>
+            <div class="manage__cardFeatures">
+              <div class="manage__cardFeatureCont">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
                   viewBox="0 0 32 32"
+                  class="manage__cardFeatureIcon"
                 >
-                  <g fill="none" stroke="#000">
+                  <g fill="none" stroke="#001125">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
                       d="M10 9h4m-4 7h12m-12 4h12m-12 4h4m-6 5h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2"
                     />
-                    <circle cx="22" cy="9" r=".5" fill="#000" />
+                    <circle cx="22" cy="9" r=".5" fill="#001125" />
                   </g>
                 </svg>
-                <div>
-                  <p>Nueva base de datos IEEE</p>
+                <div class="manage__cardFeatureTexts">
+                  <p class="manage__cardFeatureText">
+                    Nueva base de datos IEEE
+                  </p>
                   <p>Disponible desde hoy para ingenieros</p>
                 </div>
               </div>
-              <div>
+              <div class="manage__cardFeatureCont">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
                   viewBox="0 0 26 26"
+                  class="manage__cardFeatureIcon"
                 >
                   <path
-                    fill="#000"
+                    fill="#001125"
                     d="M12.031 1.063c-.321.001-.676.145-1 .468L5.312 8H1c-.551 0-1 .449-1 1v8c0 .551.449 1 1 1h4.313L11 24.438c1 1 2 .488 2-.875V2.28c0-.791-.433-1.222-.969-1.219zm7.25 2a1 1 0 0 0-.218 1.906A8.96 8.96 0 0 1 24 13c0 3.524-2 6.55-4.938 8.031a1 1 0 1 0 .875 1.782C23.53 21 26 17.288 26 13s-2.471-8-6.063-9.813a1 1 0 0 0-.562-.124a1 1 0 0 0-.094 0m-2.375 3.874a1 1 0 0 0-.406 1.875C18.043 9.771 19 11.29 19 13c0 1.722-.972 3.261-2.531 4.219a1 1 0 1 0 1.062 1.687C19.601 17.636 21 15.476 21 13c0-2.461-1.387-4.633-3.438-5.906A1 1 0 0 0 17 6.937a1 1 0 0 0-.094 0"
                   />
                 </svg>
-                <div>
-                  <p>Taller de APA 7ma Ed.</p>
+                <div class="manage__cardFeatureTexts">
+                  <p class="manage__cardFeatureText">Taller de APA 7ma Ed.</p>
                   <p>Inscripciones abiertas para el viernes</p>
                 </div>
               </div>
             </div>
           </article>
-          <article>
-            <h2>Contacto Rápido</h2>
-            <p>¿Necesitas ayuda con tu búsqueda?</p>
-            <div class="">
-              <div>
+          <article class="manage__card manage_contactCard">
+            <h2 class="manage__cardTitle">Contacto Rápido</h2>
+            <p class="manage__cardText">¿Necesitas ayuda con tu búsqueda?</p>
+            <div class="manage__cardContacts">
+              <div class="manage__cardContactCont">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
                   viewBox="0 0 24 24"
+                  class="manage__cardContactsIcon"
                 >
                   <path
-                    fill="#000"
+                    fill="#001125"
                     d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"
                   />
                 </svg>
                 <p>biblioreferencia@univ.edu</p>
               </div>
-              <div>
+              <div class="manage__cardContactCont">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="50"
                   height="50"
                   viewBox="0 0 24 24"
+                  class="manage__cardContactsIcon"
                 >
                   <path
-                    fill="#000"
+                    fill="#001125"
                     d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
                   />
                 </svg>
@@ -289,7 +317,9 @@
             <a href="#" class="footer__link">Mapa de la biblioteca</a>
           </li>
         </ul>
-        <p>&copy; 2025 University Library Todos los derechos reservados</p>
+        <p class="footer__copy">
+          &copy; 2025 University Library Todos los derechos reservados
+        </p>
       </div>
     </footer>
   </body>

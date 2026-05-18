@@ -1,0 +1,118 @@
+@import "./utils.css";
+/*Reserve Page Styles*/
+.reserve {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 6rem;
+  margin-top: 2.5rem;
+}
+.reserve__containerInfo {
+  display: grid;
+  grid-template-rows: 85px 100px 270px;
+  gap: 1rem;
+  width: 100%;
+}
+.reserve__infoTitle {
+  max-width: 460px;
+
+  font-size: 2rem;
+}
+.reserve__infoDescription {
+  max-width: 460px;
+  color: var(--c-secondary);
+  line-height: 27px;
+}
+.reserve__infoPicture {
+  width: 100%;
+  height: 100%;
+}
+.reserve__infoImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*Reserve Container Styles*/
+.reserve__containerReserve {
+  display: grid;
+  gap: 2.2rem;
+}
+.reserve__contReserveForm {
+  padding: 1rem;
+  border: 2px solid var(--c-secondary-extra-light);
+  border-radius: 9px;
+}
+.reserve__contHeader {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1.2rem;
+}
+.reserve__contHeaderTxt {
+  color: var(--c-secondary);
+  line-height: 26px;
+}
+/*Reserve Form Styles*/
+.reserve__contForm {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+.reserve__contFormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reserve__contFormInputText {
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--c-secondary);
+  padding: 10px 10px;
+  border: 1px solid var(--c-secondary-light);
+  outline: none;
+  &:focus {
+    border: 2px solid var(--c-primary);
+  }
+}
+.reserve__contFormSmall {
+  color: var(--c-secondary);
+}
+.reserve__contFormInputDate {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: var(--c-secondary);
+  border: 1px solid var(--c-secondary-light);
+  outline: none;
+  &:focus {
+    border: 2px solid var(--c-primary);
+  }
+}
+.reserve__contFormInputEnable {
+  padding: 10px;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.6;
+}
+.reserve__contFormBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.reserve__contInformation {
+  display: grid;
+  gap: 1.2rem;
+}
+.reserve__contInfoCard {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  padding: 1rem;
+  background-color: var(--c-secondary-extra-light);
+  border-radius: 9px;
+  border: 2px solid var(--c-secondary-extra-light);
+}
+.reserve__contInfoDescription {
+  font-size: 0.91rem;
+  color: var(--c-secondary);
+  line-height: 24px;
+}
+/*--------------------------------------------------------------*/
