@@ -3,63 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contáctanos</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/pages.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <title>Contacto</title>
   </head>
   <body>
-    <header>
-      <h2>Librería IUD</h2>
-      <nav>
-        <!--ETIQUETA DE NAVEGACION -->
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./catalogo.html">Catalogo</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./reserva.html">Reserva</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__logo">University Library</h1>
+        <div class="header__menuIcon"></div>
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <h2 class="header__logo">University Library</h2>
+            <li class="header__navLi">
+              <a href="./index.html" class="header__navLink">Principal</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./catalogo.html" class="header__navLink">Catalogo</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./reserva.html" class="header__navLink">Reserva</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./nosotros.html" class="header__navLink">Nosotros</a>
+            </li>
+            <li>
+              <a href="./contacto.html" class="header__navLink">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          class="header__userIcon"
+        >
+          <g fill="none" stroke="#001125" stroke-width="1.5">
+            <circle cx="12" cy="9" r="3" />
+            <circle cx="12" cy="12" r="10" />
+            <path
+              stroke-linecap="round"
+              d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+            />
+          </g>
+        </svg>
+      </div>
     </header>
-    <main>
-      <h1>Contáctanos</h1>
-      <!--Pagina contactanos-->
+    <main class="container">
+      <h2>Contáctenos</h2>
+      <!--Pagina contáctenos-->
       <p>
         Si tienes preguntas sobre nuestras colecciones, asistencia de
         investigación o servicios
       </p>
-      <p>Nuestro equipo esta aqui para ayudarte.</p>
+      <p>Nuestro equipo esta aquí para ayudarte.</p>
       <section class="email">
         <!--Division para el email-->
-
-        <img src="imagencorreo.png" alt="Logo correo"/>
+        <img src="imagencorreo.png" alt="Logo correo" />
         <h2>Correo de contacto</h2>
         <p>Soporte institucional para estudiantes y facultades</p>
         <p>
           <b>atencionalciudadano@iudigital.edu.co</b>
         </p>
       </section>
-
       <section class="phone">
-        <!--Division para el numero telefonico-->
-        <img src="telefono.png" alt="logo telefono"/>
-        <h2>Telefono</h2>
-        <p>Llamanos al <b>(+57) 604 520 07 50</b></p>
+        <!--Division para el numero telefónico-->
+        <img src="telefono.png" alt="logo telefono" />
+        <h2>Teléfono</h2>
+        <p>Llámanos al <b>(+57) 604 520 07 50</b></p>
       </section>
-
       <section class="visitanos">
-        <!--Division para la direccion-->
-        <img src="ubicacion.png" alt="imagen representativa de la ubicación"/>
-        <h2>Visitanos</h2>
+        <!--Division para la dirección-->
+        <img src="ubicacion.png" alt="imagen representativa de la ubicación" />
+        <h2>Visítenos</h2>
         <p>
-          Direccion:
+          Dirección:
           <b
             >Cra 55 # 42 90 INT 0101 Centro Cívico Plaza de la Libertad
-            Medellín, Antioquia</b
+            Medellin, Antioquia</b
           >
         </p>
       </section>
       <section class="formulario-contacto">
         <!--Division para el formulario de contacto-->
-        <h2>Envianos un mensaje</h2>
+        <h2>Envíanos un mensaje</h2>
         <form>
           <label for="nombre">Nombres</label>
           <input type="text" id="nombre" name="nombre" />
@@ -78,7 +109,7 @@
           <label id="mensaje">Tu mensaje</label>
           <textarea id="tu-mensaje"></textarea>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn__blue">Enviar</button>
           <!--Boton para enviar datos-->
         </form>
 
@@ -86,10 +117,25 @@
       </section>
     </main>
     <footer class="footer">
-      <h3>Libreria IUD</h3>
-      <p>
-        ©2026 Universidad Digital De Antioquia Todos los derechos reservados.
-      </p>
+      <div class="footer__container container">
+        <h2 class="footer__logo">University Library</h2>
+        <ul class="footer__list">
+          <li class="footer__li">
+            <a href="#" class="footer__link">Política de privacidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Términos de servicio</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Accesibilidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Mapa de la biblioteca</a>
+          </li>
+        </ul>
+        <p>&copy; 2025 University Library Todos los derechos reservados</p>
+      </div>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
 </html>

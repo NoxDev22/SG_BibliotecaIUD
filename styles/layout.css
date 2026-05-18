@@ -1,0 +1,98 @@
+@import "./utils.css";
+
+:root {
+  --menu-bar: url("../Images/Icons/bar.svg");
+  --menu-close: url("../Images/Icons/close.svg");
+}
+
+/*Header Styles*/
+.header {
+  height: 60px;
+  border-bottom: 1px solid var(--c-tertiary-light);
+}
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  align-items: center;
+  height: 100%;
+}
+.header__logo {
+  font-size: 1.2rem;
+}
+.header__nav {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--c-neutral);
+  transition: left 0.3s ease-in-out;
+}
+.header__navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.header__navList h2 {
+  padding-bottom: 14px;
+}
+.header__userIcon {
+  display: none;
+  justify-self: center;
+  width: 32px;
+  cursor: pointer;
+}
+.header__menuIcon {
+  position: relative;
+  z-index: 60;
+  align-self: center;
+  justify-self: center;
+  width: 30px;
+  height: 30px;
+  background-image: var(--menu-bar);
+  background-position: center;
+  background-size: cover;
+  transition: background 0.3s ease-in-out;
+}
+.header__menuIcon--close {
+  background-image: var(--menu-close);
+}
+.header__nav--active {
+  left: 0;
+}
+/*--------------------------------------------------------------*/
+
+/*Footer Styles*/
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--c-tertiary-light);
+}
+.footer__container {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--c-tertiary);
+  text-align: center;
+}
+
+.footer__logo {
+  font-size: 1.2rem;
+  color: var(--c-primary);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__link {
+  color: var(--c-tertiary);
+}

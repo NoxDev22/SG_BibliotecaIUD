@@ -1,0 +1,11 @@
+:root {
+  --c-primary: #001125;
+  --c-primary-light: #002147;
+  --c-primary-extra-light: #465f88;
+  --c-secondary: #444749;
+  --c-secondary-light: #757779;
+  --c-tertiary: #64748b;
+  --c-tertiary-dark: #0b1c30;
+  --c-tertiary-light: #cfdcf1;
+  --c-neutral: #ffffff;
+}

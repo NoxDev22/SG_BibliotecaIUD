@@ -3,30 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/pages.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <title>Nosotros</title>
   </head>
   <body>
-    <header>
-      <h2>Librería IUD</h2>
-      <nav>
-        <!--ETIQUETA DE NAVEGACIÓN  -->
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./catalogo.html">Catalogo</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./reserva.html">Reserva</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__logo">University Library</h1>
+        <div class="header__menuIcon"></div>
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <h2 class="header__logo">University Library</h2>
+            <li class="header__navLi">
+              <a href="./index.html" class="header__navLink">Principal</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./catalogo.html" class="header__navLink">Catalogo</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./reserva.html" class="header__navLink">Reserva</a>
+            </li>
+            <li class="header__navLi">
+              <a href="./nosotros.html" class="header__navLink">Nosotros</a>
+            </li>
+            <li>
+              <a href="./contacto.html" class="header__navLink">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          class="header__userIcon"
+        >
+          <g fill="none" stroke="#001125" stroke-width="1.5">
+            <circle cx="12" cy="9" r="3" />
+            <circle cx="12" cy="12" r="10" />
+            <path
+              stroke-linecap="round"
+              d="M17.97 20c-.16-2.892-1.045-5-5.97-5s-5.81 2.108-5.97 5"
+            />
+          </g>
+        </svg>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <section class="introduccion-nosotros">
         <h1>Repartiendo conocimiento a la comunidad educativa</h1>
-
         <p>
-          La libreria IUD sirve como el centro de conocimiento de la
-          institución, dando acceso a una diversidad de recursos academicos y
-          estimulando la cultura de la busqueda y aprendizaje de sabiduria.
+          La librería IUD sirve como el centro de conocimiento de la
+          institución, dando acceso a una diversidad de recursos académicos y
+          estimulando la cultura de la búsqueda y aprendizaje de sabiduría.
         </p>
 
         <button>Nuestra misión</button>
@@ -34,10 +67,8 @@
       </section>
 
       <section class="mision">
-        <img src="mision.png" alt="nuestra mision"/>
-
+        <img src="mision.png" alt="nuestra misión" />
         <h2>Nuestra misión</h2>
-
         <p>
           Proveer información de primera clase, además de servicios para apoyar
           la enseñanza, el aprendizaje y la búsqueda para nuestra universidad
@@ -45,19 +76,17 @@
       </section>
 
       <section class="vision">
-        <img src="vision.png" alt="nuestra vision"/>
-
+        <img src="vision.png" alt="nuestra vision" />
         <h2>Nuestra Visión</h2>
-
         <p>
           Ser lideres en la integración digital y la alfabetización
-          universitaria, adaptandonos al constante desarrollo de las necesidades
+          universitaria, adaptándonos al constante desarrollo de las necesidades
           del siglo XXI
         </p>
       </section>
 
       <section class="valores">
-        <img src="valores.png" alt="nuestros valores"/>
+        <img src="valores.png" alt="nuestros valores" />
 
         <h2>Nuestros valores</h2>
 
@@ -71,7 +100,7 @@
         <h2>Nuestra colección</h2>
 
         <section class="recursos-fisicos">
-          <h2>Recursos fisicos</h2>
+          <h2>Recursos físicos</h2>
 
           <p>
             Más de 500 mil volúmenes incluyendo recursos raros, periódicos y
@@ -100,20 +129,20 @@
 
         <section class="facultad">
           <h2>Facultad</h2>
-          <p>Acceso a archivos reservados a campos curriculares especificos</p>
+          <p>Acceso a archivos reservados a campos curriculares específicos</p>
         </section>
       </section>
 
       <section class="politicas">
-        <h2>Politicas</h2>
+        <h2>Políticas</h2>
 
         <table border="0">
           <thead>
             <tr>
-              <th>CATEGORIA</th>
-              <th>DESCRIPCION</th>
-              <th>DURACION/LIMITE</th>
-              <th>DETALLE</th>
+              <th>Categoría</th>
+              <th>Descripción</th>
+              <th>Duración/Limite</th>
+              <th>Detalle</th>
             </tr>
           </thead>
 
@@ -166,16 +195,16 @@
 
         <p>
           Reserva de salas de estudio y areas diseñadas para la colaboración
-          academica
+          académica
         </p>
       </section>
 
       <section class="asistencia">
         <h2>Asistencia</h2>
-        <img src="asistencia.png" alt="Asistencia imagen"/>
+        <img src="asistencia.png" alt="Asistencia imagen" />
         <h3>Referencia</h3>
         <p>Pide soporte para inquietudes de citación a investigaciones</p>
-        <img src="referencia.png" alt="imagen con datos para el soporte"/>
+        <img src="referencia.png" alt="imagen con datos para el soporte" />
         <h3>Talleres</h3>
         <p>
           Sesiones regulares sobre el uso de la pagina, búsqueda de base de
@@ -186,8 +215,25 @@
       </section>
     </main>
     <footer class="footer">
-      <h3>Librería IUD</h3>
-      <p>©2026 Universidad Digital De Antiqua Todos los derechos reservados.</p>
+      <div class="footer__container container">
+        <h2 class="footer__logo">University Library</h2>
+        <ul class="footer__list">
+          <li class="footer__li">
+            <a href="#" class="footer__link">Política de privacidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Términos de servicio</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Accesibilidad</a>
+          </li>
+          <li class="footer__li">
+            <a href="#" class="footer__link">Mapa de la biblioteca</a>
+          </li>
+        </ul>
+        <p>&copy; 2025 University Library Todos los derechos reservados</p>
+      </div>
     </footer>
   </body>
+  <script src="./js/main.js"></script>
 </html>
