@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/pages.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/pages/about.css" />
+    <link rel="stylesheet" href="./styles/responsive/r-about.css" />
     <title>Nosotros</title>
   </head>
   <body>
@@ -56,165 +56,294 @@
       </div>
     </header>
     <main class="container">
-      <section class="introduccion-nosotros">
-        <h1>Repartiendo conocimiento a la comunidad educativa</h1>
-        <p>
-          La librería IUD sirve como el centro de conocimiento de la
-          institución, dando acceso a una diversidad de recursos académicos y
-          estimulando la cultura de la búsqueda y aprendizaje de sabiduría.
-        </p>
+      <div class="introduction">
+        <div class="introduction_textpart">
+          <section class="introduccion-nosotros">
+            <h1 class="introduction_title">
+              Repartiendo Conocimiento a la Comunidad Educativa
+            </h1>
+            <p class="normal_text">
+              La librería IUD sirve como el centro de conocimiento de la
+              institución, dando acceso a una diversidad de recursos académicos
+              y estimulando la cultura de la búsqueda y aprendizaje de
+              sabiduría.
+            </p>
 
-        <button>Nuestra misión</button>
-        <button>Reserva</button>
-      </section>
+            <div class="introduction_buttons">
+              <button class="mission_button">Nuestra misión</button>
+              <button class="reserve_button">Reserva</button>
+            </div>
+          </section>
+        </div>
 
-      <section class="mision">
-        <img src="mision.png" alt="nuestra misión" />
-        <h2>Nuestra misión</h2>
-        <p>
-          Proveer información de primera clase, además de servicios para apoyar
-          la enseñanza, el aprendizaje y la búsqueda para nuestra universidad
-        </p>
-      </section>
+        <img
+          class="introduction_image"
+          src="Images\img_pages\Img-biblioteca.jpg"
+          alt="Imagen de una libreria"
+        />
+      </div>
 
-      <section class="vision">
-        <img src="vision.png" alt="nuestra vision" />
-        <h2>Nuestra Visión</h2>
-        <p>
-          Ser lideres en la integración digital y la alfabetización
-          universitaria, adaptándonos al constante desarrollo de las necesidades
-          del siglo XXI
-        </p>
-      </section>
+      <div class="targets">
+        <div class="target">
+          <section class="mission">
+            <svg
+              class="book_icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_iconCarrier">
+                <!-- Fondo blanco opcional (puedes borrarlo si quieres transparencia) -->
+                <rect width="24" height="24" fill="white" />
 
-      <section class="valores">
-        <img src="valores.png" alt="nuestros valores" />
+                <!-- Cuerpo del libro (Hojas internas) -->
+                <path
+                  d="M12 6.90909C10.8999 5.50893 9.20406 4.10877 5.00119 4.00602C4.72513 3.99928 4.5 4.22351 4.5 4.49965C4.5 6.54813 4.5 14.3034 4.5 16.597C4.5 16.8731 4.72515 17.09 5.00114 17.099C9.20405 17.2364 10.8999 19.0998 12 20.5M12 6.90909C13.1001 5.50893 14.7959 4.10877 18.9988 4.00602C19.2749 3.99928 19.5 4.21847 19.5 4.49461C19.5 6.78447 19.5 14.3064 19.5 16.5963C19.5 16.8724 19.2749 17.09 18.9989 17.099C14.796 17.2364 13.1001 19.0998 12 20.5M12 6.90909L12 20.5"
+                  stroke="#000000"
+                  stroke-linejoin="round"
+                />
 
-        <h2>Nuestros valores</h2>
+                <!-- Contorno de las tapas/cubierta -->
+                <path
+                  d="M19.2353 6H21.5C21.7761 6 22 6.22386 22 6.5V19.539C22 19.9436 21.5233 20.2124 21.1535 20.0481C20.3584 19.6948 19.0315 19.2632 17.2941 19.2632C14.3529 19.2632 12 21 12 21C12 21 9.64706 19.2632 6.70588 19.2632C4.96845 19.2632 3.64156 19.6948 2.84647 20.0481C2.47668 20.2124 2 19.9436 2 19.539V6.5C2 6.22386 2.22386 6 2.5 6H4.76471"
+                  stroke="#000000"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
 
-        <p>
-          Integridad, accesibilidad, preservación y innovación son pilares para
-          el servicio a nuestros estudiantes y docentes
-        </p>
-      </section>
+            <h2>Nuestra misión</h2>
+            <p class="normal_text">
+              Proveer información de primera clase, además de servicios para
+              apoyar la enseñanza, el aprendizaje y la búsqueda para nuestra
+              universidad
+            </p>
+          </section>
+        </div>
+        <div class="target">
+          <section class="vision">
+            <svg
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon-global-eye"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M43.5 24a22.5 22.5 0 0 0-39 0" />
+                <circle cx="24" cy="24" r="7.889" />
+                <path d="M4.5 24a22.5 22.5 0 0 0 39 0" />
+              </g>
+            </svg>
+            <h2>Nuestra Visión</h2>
+            <p class="normal_text">
+              Ser lideres en la integración digital y la alfabetización
+              universitaria, adaptándonos al constante desarrollo de las
+              necesidades del siglo XXI
+            </p>
+          </section>
+        </div>
+        <div class="target">
+          <svg
+            viewBox="0 0 70 70"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-users-group"
+          >
+            <!-- El grupo hereda el color del texto y quita el relleno por defecto -->
+            <g fill="currentColor">
+              <!-- Cabeza central -->
+              <path
+                d="M34.801,33.099c6.73,0,10.252-9.981,10.252-15.332c0-6.3-4.6-11.426-10.252-11.426c-5.654,0-10.255,5.126-10.255,11.426 C24.546,23.117,28.068,33.099,34.801,33.099z M34.801,10.341c3.453,0,6.252,3.324,6.252,7.426c0,4.1-2.799,11.332-6.252,11.332 c-3.455,0-6.254-7.232-6.254-11.332C28.547,13.665,31.346,10.341,34.801,10.341z"
+              />
+              <!-- Cuerpo central -->
+              <path
+                d="M45.1,40.093c-0.695-0.498-1.514-0.721-2.334-0.721c-0.745,0-1.492,0.224-2.148,0.642c-1.77,1.129-3.781,1.732-5.818,1.732 c-2.036,0-4.048-0.592-5.818-1.721c-0.657-0.418-1.403-0.622-2.149-0.622c-0.819,0-1.638,0.252-2.333,0.751 c-5.155,3.703-8.235,12.789-8.235,19.551c0,2.209,1.791,3.878,4,3.878h29.073c2.209,0,4-1.669,4-3.878 C53.336,52.943,50.256,43.796,45.1,40.093z M20.263,59.583c0-6,2.613-13.46,6.568-16.3c2.343,1.49,5.063,2.35,7.968,2.35 c2.906,0,5.627-0.859,7.967-2.35c3.955,2.84,6.57,10.3,6.57,16.3H20.263z"
+              />
 
-      <section class="coleccion">
-        <h2>Nuestra colección</h2>
+              <!-- Detalles de sombras y personas laterales -->
+              <path
+                d="M30.92,47.391c-0.606-0.244-1.203-0.553-1.771-0.915c-0.345-0.22-0.789-0.208-1.121,0.031 c-3.064,2.203-4.432,5.424-4.432,10.443c0,0.553,0.448,1,1,1c0.553,0,1-0.447,1-1c0-4.061,0.93-6.625,3.086-8.423 c0.486,0.273,0.984,0.515,1.49,0.719c0.514,0.205,1.096-0.041,1.302-0.554S31.433,47.598,30.92,47.391z"
+              />
+              <path
+                d="M34.799,48.146c-0.335,0-0.666-0.018-0.994-0.048c-0.55-0.054-1.037,0.354-1.088,0.904s0.354,1.037,0.904,1.088 c0.389,0.036,0.781,0.056,1.178,0.056c0.552,0,1-0.447,1-1S35.351,48.146,34.799,48.146z"
+              />
+              <path
+                d="M57.867,40.813c-0.57-0.33-1.323-0.335-1.919-0.054c-0.261,0.123-1.244,0.375-1.772,0.51 c-0.667,0.174-1.244,0.313-1.649,0.467c-1.034,0.39-1.556,1.526-1.167,2.56c0.388,1.033,1.54,1.523,2.576,1.138 c0.204-0.077,0.778-0.288,1.24-0.405c0.539-0.141,1.003-0.386,1.402-0.503c3.129,2.494,5.531,9.058,6.139,13.058h-5.644 c-1.104,0-2,0.896-2,2s0.896,2,2,2h7.794c1.104,0,2-0.649,2-1.754C66.867,54.111,63.361,44.01,57.867,40.813z"
+              />
+              <path
+                d="M16.715,44.318c0.388-1.034-0.136-2.194-1.17-2.582c-0.127-0.048-0.212-0.127-0.438-0.305 c-0.246-0.191-0.582-0.483-1.048-0.726c-0.607-0.316-1.334-0.359-1.927-0.014C6.639,43.888,3.133,54.111,3.133,59.83 c0,1.104,0.896,1.753,2,1.753h3.94c1.104,0,2-0.896,2-2s-0.896-2-2-2H7.282c0.591-4,2.875-10.208,5.875-12.839 c0.262,0.174,0.581,0.597,0.982,0.747C15.175,45.881,16.326,45.353,16.715,44.318z"
+              />
+              <path
+                d="M19.706,36.096c0.199,0.025,0.422,0.039,0.661,0.039c1.701,0,4.289-0.72,6.104-3.442c0.613-0.919,0.364-2.161-0.555-2.773 c-0.918-0.612-2.16-0.363-2.773,0.555c-1.204,1.807-2.813,1.67-2.952,1.651c-0.107-0.018-0.216-0.026-0.325-0.026 c-1.539,0-4.252-5.395-4.252-9.332c0-2.992,1.907-5.426,4.252-5.426c1.104,0,2-0.896,2-2s-0.896-2-2-2 c-4.55,0-8.252,4.229-8.252,9.426C11.614,27.417,14.682,35.918,19.706,36.096z"
+              />
+              <path
+                d="M43.506,29.919c-0.92,0.612-1.168,1.854-0.555,2.773c1.814,2.724,4.402,3.442,6.104,3.442c0.24,0,0.463-0.014,0.662-0.039 c5.023-0.178,8.092-8.679,8.092-13.329c0-5.197-3.702-9.426-8.252-9.426c-1.105,0-2,0.896-2,2s0.895,2,2,2 c2.344,0,4.252,2.434,4.252,5.426c0,3.938-2.713,9.332-4.252,9.332c-0.109,0-0.219,0.009-0.326,0.026 c-0.016,0.006-1.702,0.222-2.951-1.651C45.666,29.555,44.425,29.304,43.506,29.919z"
+              />
+            </g>
+          </svg>
+          <section class="valores">
+            <h2>Nuestros valores</h2>
 
-        <section class="recursos-fisicos">
-          <h2>Recursos físicos</h2>
+            <p class="normal_text">
+              Integridad, accesibilidad, preservación y innovación son pilares
+              para el servicio a nuestros estudiantes y docentes
+            </p>
+          </section>
+        </div>
+      </div>
 
-          <p>
-            Más de 500 mil volúmenes incluyendo recursos raros, periódicos y
-            investigaciones especializadas
-          </p>
+      <h2>Nuestra colección</h2>
 
-          <ul>
-            <li>Colección Principal</li>
-            <li>Archivos especiales</li>
-            <li>Archivos de periódico</li>
-          </ul>
-        </section>
+      <div class="our_collections">
+        <div class="physical_resources">
+          <section class="recursos-fisicos">
+            <h2>Recursos físicos</h2>
 
-        <section class="repositorio-digital">
-          <h2>Repositorio Digital</h2>
-          <p>
-            Acceso a e-books, bases de datos escolares y revistas
-            internacionales de investigación
-          </p>
-        </section>
+            <p>
+              Más de 500 mil volúmenes incluyendo recursos raros, periódicos y
+              investigaciones especializadas
+            </p>
 
-        <section class="multimedia">
-          <h2>Multimedia</h2>
-          <p>Mapas, cortos y contenido audiovisual</p>
-        </section>
+            <ul>
+              <li>Colección Principal</li>
+              <li>Archivos especiales</li>
+              <li>Archivos de periódico</li>
+            </ul>
+          </section>
+        </div>
 
-        <section class="facultad">
-          <h2>Facultad</h2>
-          <p>Acceso a archivos reservados a campos curriculares específicos</p>
-        </section>
-      </section>
+        <div class="digital_repository">
+          <section class="repositorio-digital">
+            <h2>Repositorio Digital</h2>
+            <p>
+              Acceso a e-books, bases de datos escolares y revistas
+              internacionales de investigación
+            </p>
+          </section>
+        </div>
+
+        <div class="media">
+          <section class="multimedia">
+            <h2>Multimedia</h2>
+            <p>Mapas, cortos y contenido audiovisual</p>
+          </section>
+        </div>
+
+        <div class="reserve">
+          <section class="facultad">
+            <h2>Facultad</h2>
+            <p>
+              Acceso a archivos reservados a campos curriculares específicos
+            </p>
+          </section>
+        </div>
+      </div>
+      <!--end our_collections class-->
 
       <section class="politicas">
         <h2>Políticas</h2>
 
-        <table border="0">
-          <thead>
+        <table class="policies_table" border="0">
+          <thead class="policies_table_head">
             <tr>
-              <th>Categoría</th>
-              <th>Descripción</th>
-              <th>Duración/Limite</th>
-              <th>Detalle</th>
+              <th class="policies_table_h">Categoría</th>
+              <th class="policies_table_h">Descripción</th>
+              <th class="policies_table_h">Duración/Limite</th>
+              <th class="policies_table_h">Detalle</th>
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="policies_table_body">
             <tr>
-              <td>Prestamos regulares</td>
-              <td>Libros de la colección principal</td>
-              <td>21 días</td>
-              <td>
+              <td class="policies_table_b"><b>Prestamos regulares</b></td>
+              <td class="policies_table_b">Libros de la colección principal</td>
+              <td class="policies_table_b">21 días</td>
+              <td class="policies_table_b">
                 Más de 10 recursos, 2 renovaciones permitidas si no hay
                 retenciones
               </td>
             </tr>
 
             <tr>
-              <td>Regresos</td>
-              <td>Protocolo estándar de regreso</td>
-              <td>N/A</td>
-              <td>Debe ser regresado a la institución</td>
+              <td class="policies_table_b"><b>Regresos</b></td>
+              <td class="policies_table_b">Protocolo estándar de regreso</td>
+              <td class="policies_table_b">N/A</td>
+              <td class="policies_table_b">
+                Debe ser regresado a la institución
+              </td>
             </tr>
 
             <tr>
-              <td>Multas vencidas</td>
-              <td>Multa por regresar el item tarde</td>
-              <td>50 COP por dia</td>
-              <td>Limite de 5000 COP antes de considerarse perdido</td>
+              <td class="policies_table_b"><b>vencidas</b></td>
+              <td class="policies_table_b">Multa por regresar el item tarde</td>
+              <td class="policies_table_b">50 COP por dia</td>
+              <td class="policies_table_b">
+                Limite de 5000 COP antes de considerarse perdido
+              </td>
             </tr>
 
             <tr>
-              <td>Recursos perdidos</td>
-              <td>Reemplazo del recurso no entregado</td>
-              <td>Precio completo</td>
-              <td>
+              <td class="policies_table_b"><b>Recursos perdidos</b></td>
+              <td class="policies_table_b">
+                Reemplazo del recurso no entregado
+              </td>
+              <td class="policies_table_b">Precio completo</td>
+              <td class="policies_table_b">
                 El reemplazo lleva consigo una multa de 10000 COP por recurso
               </td>
             </tr>
 
             <tr>
-              <td>Inventarios</td>
-              <td>Conteo anual de los recursos fisicos</td>
-              <td>Cada año</td>
-              <td>Seran realizados en el descanso academico</td>
+              <td class="policies_table_b"><b>Inventarios</b></td>
+              <td class="policies_table_b">
+                Conteo anual de los recursos fisicos
+              </td>
+              <td class="policies_table_b">Cada año</td>
+              <td class="policies_table_b">
+                Seran realizados en el descanso academico
+              </td>
             </tr>
           </tbody>
         </table>
       </section>
 
-      <section class="espacios-colaborativos">
-        <h2>Espacios colaborativos</h2>
+      <div class="collaborative_spaces">
+        <section class="spaces_box">
+          <h2>Espacios colaborativos</h2>
+          <p>
+            Reserva de salas de estudio y áreas diseñadas para la colaboración
+            académica.
+          </p>
+        </section>
 
-        <p>
-          Reserva de salas de estudio y areas diseñadas para la colaboración
-          académica
-        </p>
-      </section>
+        <section class="asistance_box">
+          <h2>Asistencia</h2>
 
-      <section class="asistencia">
-        <h2>Asistencia</h2>
-        <img src="asistencia.png" alt="Asistencia imagen" />
-        <h3>Referencia</h3>
-        <p>Pide soporte para inquietudes de citación a investigaciones</p>
-        <img src="referencia.png" alt="imagen con datos para el soporte" />
-        <h3>Talleres</h3>
-        <p>
-          Sesiones regulares sobre el uso de la pagina, búsqueda de base de
-          datos y gestión de la investigación
-        </p>
+          <!-- Agrupamos el sub-contenido para que no se rompa el diseño -->
+          <div class="asistance_content">
+            <div class="asistance_item">
+              <h3>Referencia</h3>
+              <p>
+                Pide soporte para inquietudes de citación a investigaciones.
+              </p>
+            </div>
 
-        <button>Reserva una consulta</button>
-      </section>
+            <div class="asistance_item">
+              <h3>Talleres</h3>
+              <p>
+                Sesiones regulares sobre el uso de la página, búsqueda de base
+                de datos y gestión de la investigación.
+              </p>
+            </div>
+          </div>
+
+          <button class="asistance_button">Reserva una consulta</button>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -237,5 +366,6 @@
       </div>
     </footer>
   </body>
-  <script src="./js/main.js"></script>
+  <script src="./js/controller/header.js"></script>
+  <script src="./js/pages/about.js"></script>
 </html>

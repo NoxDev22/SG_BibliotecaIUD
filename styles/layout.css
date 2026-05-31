@@ -71,6 +71,29 @@
 .header__navList h2 {
   padding-bottom: 15px;
 }
+.header__navLi::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0%;
+  background-color: var(--c-primary);
+  border-radius: 1px;
+  transition: width 0.3s ease-in-out;
+}
+.header__navLi:hover::after {
+  width: 100%;
+}
+.header__navLi--active::after {
+  width: 100%;
+}
+.header__navLi--active .header__navLink {
+  font-weight: 600;
+  color: var(--c-primary);
+  pointer-events: none;
+}
 .header__navLink {
   font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
@@ -214,21 +237,7 @@
       color: var(--c-primary);
     }
   }
-  .header__navLi::after {
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    content: "";
-    display: block;
-    height: 4px;
-    width: 0%;
-    background-color: var(--c-primary);
-    border-radius: 1px;
-    transition: width 0.3s ease-in-out;
-  }
-  .header__navLi:hover::after {
-    width: 100%;
-  }
+
   /*Footer Styles*/
   .footer__container {
     grid-template-columns: 380px 570px;

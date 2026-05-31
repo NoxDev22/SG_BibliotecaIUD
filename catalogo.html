@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/components.css" />
     <link rel="stylesheet" href="./styles/pages/catalog.css" />
     <link rel="stylesheet" href="./styles/responsive/r-catalog.css" />
+
     <title>Catalogo</title>
   </head>
   <body class="overflow">
@@ -105,11 +106,15 @@
                 d="M3 6h18M6 12h12m-9 6h6"
               />
             </svg>
-            <select class="form_catInput">
+            <select class="form_catInput form__selectCategory">
               <option value="">Todas las categorías</option>
-              <option value="">Terror</option>
-              <option value="">Acción</option>
-              <option value="">Romance</option>
+              <option value="Programacion">Programación</option>
+              <option value="Bases de Datos">Bases de Datos</option>
+              <option value="Redes">Redes</option>
+              <option value="Inteligencia Artificial">
+                Inteligencia Artificial
+              </option>
+              <option value="Desarrollo Web">Desarrollo Web</option>
             </select>
           </div>
           <button class="btn__blue form__cnBtn">Buscar</button>
@@ -117,180 +122,15 @@
       </section>
       <!--Contenedor de cartas de libros-->
       <section class="bookCard__section">
-        <section class="bookCard__container">
-          <article class="bookCard">
-            <figure class="bookCard__figure">
-              <img
-                src="./Images/Img_books/Fundamentos_algoritmia.jpg"
-                alt="Imagen de libro fundamentos de algoritmia"
-                class="bookCard__img"
-              />
-            </figure>
-            <div class="bookCard__bookInfo">
-              <p class="bookCard__categoryText">Ciencias</p>
-              <div class="bookCard__bookData">
-                <h3 class="bookCard__bookTitle">Fundamentos de Algoritmia</h3>
-                <p class="bookCard__bookAutor">G. Brassard - P. Bradley</p>
-              </div>
-              <div class="bookCard__bookData">
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">ISBN:</p>
-                  <p class="bookCard__isbnNumber">97B-D26033348</p>
-                </div>
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">Estado:</p>
-                  <p class="bookCard__bookState">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="50"
-                      height="50"
-                      viewBox="0 0 24 24"
-                      class="bookCard__iconState"
-                    >
-                      <path
-                        fill="#239700"
-                        d="M12 17a5 5 0 1 1 0-10a5 5 0 0 1 0 10Z"
-                      />
-                    </svg>
-                    Disponible
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button class="btn__blue bookCard__btnReserve">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="19"
-                viewBox="0 0 24 24"
-                class="bookCard__iconReserve"
-              >
-                <path
-                  fill="#001125"
-                  d="M5 21V5q0-.825.588-1.412T7 3h10q.825 0 1.413.588T19 5v16l-7-3zm2-3.05l5-2.15l5 2.15V5H7zM7 5h10z"
-                />
-              </svg>
-              Reservar
-            </button>
-          </article>
-          <article class="bookCard">
-            <figure class="bookCard__figure">
-              <img
-                src="./Images/Img_books/Historia_del_arte.png"
-                alt="Imagen de libro fundamentos de algoritmia"
-                class="bookCard__img"
-              />
-            </figure>
-            <div class="bookCard__bookInfo">
-              <p class="bookCard__categoryText">Arte</p>
-              <div class="bookCard__bookData">
-                <h3 class="bookCard__bookTitle">Historia del Arte</h3>
-                <p class="bookCard__bookAutor">C. Millan</p>
-              </div>
-              <div class="bookCard__bookData">
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">ISBN:</p>
-                  <p class="bookCard__isbnNumber">45A-G56317299</p>
-                </div>
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">Estado:</p>
-                  <p class="bookCard__bookState">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="50"
-                      height="50"
-                      viewBox="0 0 24 24"
-                      class="bookCard__iconState"
-                    >
-                      <path
-                        fill="#239700"
-                        d="M12 17a5 5 0 1 1 0-10a5 5 0 0 1 0 10Z"
-                      /></svg
-                    >Disponible
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button class="btn__blue bookCard__btnReserve">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="19"
-                viewBox="0 0 24 24"
-                class="bookCard__iconReserve"
-              >
-                <path
-                  fill="#001125"
-                  d="M5 21V5q0-.825.588-1.412T7 3h10q.825 0 1.413.588T19 5v16l-7-3zm2-3.05l5-2.15l5 2.15V5H7zM7 5h10z"
-                />
-              </svg>
-              Reservar
-            </button>
-          </article>
-          <article class="bookCard">
-            <figure class="bookCard__figure">
-              <img
-                src="./Images/Img_books/aprende-react.png"
-                alt="Imagen de libro aprendiendo React"
-                class="bookCard__img"
-              />
-            </figure>
-            <div class="bookCard__bookInfo">
-              <p class="bookCard__categoryText">Programación</p>
-              <div class="bookCard__bookData">
-                <h3 class="bookCard__bookTitle">Aprendiendo React</h3>
-                <p class="bookCard__bookAutor">D. Miguel Angel</p>
-              </div>
-              <div class="bookCard__bookData">
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">ISBN:</p>
-                  <p class="bookCard__isbnNumber">67V-H76091345</p>
-                </div>
-                <div class="bookCard__bookDataState">
-                  <p class="bookCard__isbnText">Estado:</p>
-                  <p
-                    class="bookCard__bookState bookCard__bookkStateNotAvailable"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="50"
-                      height="50"
-                      viewBox="0 0 24 24"
-                      class="bookCard__iconState"
-                    >
-                      <path
-                        fill="#970000"
-                        d="M12 17a5 5 0 1 1 0-10a5 5 0 0 1 0 10Z"
-                      /></svg
-                    >No Disponible
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button class="btn__blue bookCard__btnReserve">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="19"
-                viewBox="0 0 24 24"
-                class="bookCard__iconReserve"
-              >
-                <path
-                  fill="#001125"
-                  d="M5 21V5q0-.825.588-1.412T7 3h10q.825 0 1.413.588T19 5v16l-7-3zm2-3.05l5-2.15l5 2.15V5H7zM7 5h10z"
-                />
-              </svg>
-              Reservar
-            </button>
-          </article>
-        </section>
+        <section class="bookCard__container"></section>
+        <!--Contenedor de pagination-->
         <div class="catalog__pagination">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             viewBox="0 0 24 24"
-            class="pagination__iconChevron"
+            class="pagination__iconChevron prev"
           >
             <path
               fill="none"
@@ -309,17 +149,13 @@
               />
             </path>
           </svg>
-          <ul class="pagination__list">
-            <li class="pagination__li">1</li>
-            <li class="pagination__li">2</li>
-            <li class="pagination__li">3</li>
-          </ul>
+          <ul class="pagination__list"></ul>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
             height="50"
             viewBox="0 0 24 24"
-            class="pagination__iconChevron"
+            class="pagination__iconChevron next"
           >
             <path
               fill="none"
@@ -362,5 +198,5 @@
       </div>
     </footer>
   </body>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>

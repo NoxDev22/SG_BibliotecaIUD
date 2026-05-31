@@ -1,0 +1,78 @@
+@media (min-width: 1024px) {
+  .targets {
+    grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .our_collections {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    min-height: 400px;
+  }
+
+  .physical_resources {
+    background-color: var(--c-primary-light);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .digital_repository {
+    background-color: var(--c-neutral);
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .media {
+    background-color: var(--c-primary-light);
+    grid-row: 2 / 3;
+  }
+
+  .reserve {
+    grid-row: 2 / 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .policies_table {
+    display: table;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    border: solid 1px var(--c-primary);
+  }
+
+  .policies_table tr {
+    display: table-row;
+  }
+
+  .policies_table_h,
+  .policies_table_b {
+    display: table-cell;
+    padding: 20px;
+    border-bottom: solid 1px var(--c-primary);
+    color: var(--c-secondary);
+  }
+
+  .policies_table_head {
+    display: table-header-group;
+    color: var(--c-primary);
+  }
+}
+
+@media (min-width: 1024px) {
+  .spaces_box {
+    background-size: cover;
+    background-position: center;
+  }
+  .collaborative_spaces {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+  }
+}
