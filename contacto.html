@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/components.css" />
-    <link rel="stylesheet" href="./styles/pages.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/pages/contact.css" />
+    <link rel="stylesheet" href="./styles/responsive/r-contact.css" />
     <title>Contacto</title>
   </head>
   <body>
@@ -56,67 +56,155 @@
       </div>
     </header>
     <main class="container">
-      <h2>Contáctenos</h2>
+      <h2 class="title_contact_us">Contáctenos</h2>
       <!--Pagina contáctenos-->
-      <p>
+      <p class="normal_text">
         Si tienes preguntas sobre nuestras colecciones, asistencia de
         investigación o servicios
       </p>
-      <p>Nuestro equipo esta aquí para ayudarte.</p>
-      <section class="email">
-        <!--Division para el email-->
-        <img src="imagencorreo.png" alt="Logo correo" />
-        <h2>Correo de contacto</h2>
-        <p>Soporte institucional para estudiantes y facultades</p>
-        <p>
-          <b>atencionalciudadano@iudigital.edu.co</b>
-        </p>
-      </section>
-      <section class="phone">
-        <!--Division para el numero telefónico-->
-        <img src="telefono.png" alt="logo telefono" />
-        <h2>Teléfono</h2>
-        <p>Llámanos al <b>(+57) 604 520 07 50</b></p>
-      </section>
-      <section class="visitanos">
-        <!--Division para la dirección-->
-        <img src="ubicacion.png" alt="imagen representativa de la ubicación" />
-        <h2>Visítenos</h2>
-        <p>
-          Dirección:
-          <b
-            >Cra 55 # 42 90 INT 0101 Centro Cívico Plaza de la Libertad
-            Medellin, Antioquia</b
-          >
-        </p>
-      </section>
-      <section class="formulario-contacto">
-        <!--Division para el formulario de contacto-->
-        <h2>Envíanos un mensaje</h2>
-        <form>
-          <label for="nombre">Nombres</label>
-          <input type="text" id="nombre" name="nombre" />
+      <p class="normal_text">Nuestro equipo esta aquí para ayudarte.</p>
 
-          <label>Dirección de correo</label>
-          <input type="email" id="email" name="email" />
+      <div class="seccion-contacto-global">
+        <div class="contact_container">
+          <section class="ways_of_contact target">
+            <!-- Tarjeta 1: Email -->
+            <div class="box_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                class="email_Icon"
+              >
+                <g fill="none" stroke="#ffffff" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3 7l9 6l9-6"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="target_text">
+              <h2>Correo de contacto</h2>
+              <p class="normal_text">
+                Soporte institucional para estudiantes y facultades
+              </p>
+              <p><b>atencionalciudadano@iudigital.edu.co</b></p>
+            </div>
+          </section>
 
-          <label for="asunto">Asunto</label>
-          <select name="select" id="asunto">
-            <option value="peticion" selected>Petición</option>
-            <option value="sugerencia">Pregunta</option>
-            <option value="queja">Queja</option>
-            <option value="sugerencia">Sugerencia</option>
-          </select>
+          <section class="ways_of_contact phone">
+            <!-- Tarjeta 2: Teléfono -->
+            <div class="box_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                class="phone_Icon"
+              >
+                <g
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="3" />
 
-          <label id="mensaje">Tu mensaje</label>
-          <textarea id="tu-mensaje"></textarea>
+                  <path d="M10 5h4" />
 
-          <button type="submit" class="btn__blue">Enviar</button>
-          <!--Boton para enviar datos-->
-        </form>
+                  <circle cx="12" cy="19" r="1" />
+                </g>
+              </svg>
+            </div>
+            <div class="target_text">
+              <h2>Teléfono</h2>
+              <p class="normal_text">Llámanos al</p>
+              <p><b>(+57) 604 520 07 50</b></p>
+            </div>
+          </section>
 
-        <p>Tiempo de respuesta: Aproximadamente 24 horas laborales</p>
-      </section>
+          <section class="ways_of_contact visitanos">
+            <!-- Tarjeta 3: Dirección -->
+            <div class="box_icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                class="location_Icon"
+              >
+                <g
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+
+                  <circle cx="12" cy="10" r="3" />
+                </g>
+              </svg>
+            </div>
+            <div class="target_text">
+              <h2>Visítenos</h2>
+              <p class="normal_text">Dirección:</p>
+              <p>
+                Cra 55 # 42 90 INT 0101 Centro Cívico Plaza de la Libertad
+                Medellin, Antioquia
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <section class="formulario-contacto">
+          <!--Division para el formulario de contacto-->
+          <h2>Envíanos un mensaje</h2>
+          <form>
+            <label for="nombre">Nombres</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+            />
+
+            <label for="email">Dirección de correo</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+            />
+
+            <label for="asunto">Asunto</label>
+            <select name="select" id="asunto">
+              <option value="peticion" selected>Petición</option>
+              <option value="pregunta">Pregunta</option>
+              <option value="queja">Queja</option>
+              <option value="sugerencia">Sugerencia</option>
+            </select>
+
+            <label for="tu-mensaje">Tu mensaje</label>
+            <textarea
+              id="tu-mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+            ></textarea>
+
+            <!-- Botón para enviar datos -->
+            <button type="submit" class="btn__blue">Enviar</button>
+          </form>
+
+          <p class="tiempo-respuesta">
+            Tiempo de respuesta: Aproximadamente 24 horas laborales
+          </p>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -139,5 +227,6 @@
       </div>
     </footer>
   </body>
-  <script src="./js/main.js"></script>
+  <script src="./js/controller/header.js"></script>
+  <script src="./js/pages/contact.js"></script>
 </html>

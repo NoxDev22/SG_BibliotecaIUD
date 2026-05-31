@@ -1,0 +1,10 @@
+import "./controller/header.js";
+import { renderBooks, renderPagination } from "./controller/render.js";
+import { getBooks } from "./repository/fetch.js";
+import { booksState } from "./state/bookState.js";
+import { suscribeActionSearch } from "./controller/search.js";
+const libros = await getBooks();
+booksState(libros.libros);
+renderPagination();
+renderBooks();
+suscribeActionSearch();

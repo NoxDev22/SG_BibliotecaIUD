@@ -1,0 +1,268 @@
+{
+  "total": 32,
+  "categorias": [
+    "Programación",
+    "Bases de Datos",
+    "Redes",
+    "Inteligencia Artificial",
+    "Desarrollo Web"
+  ],
+  "libros": [
+    {
+      "titulo": "Fundamentos de Algoritmia",
+      "Autor": "G. Brassard - P. Bradley",
+      "ISBN": "97B-D26033348",
+      "Categoria": "Programación",
+      "Estado": true,
+      "urlImagen": "../images/img_books/fundamentos_algoritmia.jpg"
+    },
+    {
+      "titulo": "Aprende React",
+      "Autor": "D. Miguel Angel",
+      "ISBN": "67V-H76091345",
+      "Categoria": "Programación",
+      "Estado": false,
+      "urlImagen": "../images/img_books/aprende-react.png"
+    },
+    {
+      "titulo": "Programación Orientada a Objetos",
+      "Autor": "Leobardo Lopez Roman",
+      "ISBN": "978-100000002",
+      "Categoria": "Programación",
+      "Estado": true,
+      "urlImagen": "../images/img_books/poo.jpg"
+    },
+    {
+      "titulo": "Introducción a Python",
+      "Autor": "Carlos Herrera",
+      "ISBN": "978-100000003",
+      "Categoria": "Programación",
+      "Estado": false,
+      "urlImagen": "../images/img_books/iniciando_python.jpg"
+    },
+    {
+      "titulo": "Estructuras de Datos",
+      "Autor": "Mary E",
+      "ISBN": "978-100000001",
+      "Categoria": "Programación",
+      "Estado": true,
+      "urlImagen": "../images/img_books/estructura_datos.png"
+    },
+    {
+      "titulo": "Introducción a los Algoritmos",
+      "Autor": "Miguel Torres",
+      "ISBN": "978-100000004",
+      "Categoria": "Programación",
+      "Estado": true,
+      "urlImagen": "../images/img_books/intro_algoritmos.jpg"
+    },
+    {
+      "titulo": "Fundamentos de Java",
+      "Autor": "Thierry Richard",
+      "ISBN": "978-100000005",
+      "Categoria": "Programación",
+      "Estado": true,
+      "urlImagen": "../images/img_books/fundamento_java.jpg"
+    },
+    {
+      "titulo": "Lógica de Programación",
+      "Autor": "Omar Ivan Trejos",
+      "ISBN": "978-100000006",
+      "Categoria": "Programación",
+      "Estado": false,
+      "urlImagen": "../images/img_books/logica_programacion.png"
+    },
+    {
+      "titulo": "SQL para Principiantes",
+      "Autor": "The Coder Cave",
+      "ISBN": "978-100000007",
+      "Categoria": "Bases de Datos",
+      "Estado": true,
+      "urlImagen": "../images/img_books/sql_principiantes.jpg"
+    },
+    {
+      "titulo": "Base de datos Relacionales",
+      "Autor": "Victoria Nevado Cabello",
+      "ISBN": "978-100000008",
+      "Categoria": "Bases de Datos",
+      "Estado": true,
+      "urlImagen": "../images/img_books/intro_bd_relacionales.jpg"
+    },
+    {
+      "titulo": "Diseño y administración de Bases de Datos",
+      "Autor": "Gary W. - James V.",
+      "ISBN": "978-100000009",
+      "Categoria": "Bases de Datos",
+      "Estado": false,
+      "urlImagen": "../images/img_books/diseño_bd.jpg"
+    },
+    {
+      "titulo": "Comprensión y optimización MongoDB",
+      "Autor": "Javier Peña",
+      "ISBN": "978-100000010",
+      "Categoria": "Bases de Datos",
+      "Estado": true,
+      "urlImagen": "../images/img_books/comprension_mongoDb.jpg"
+    },
+    {
+      "titulo": "Aprende SQL en 20 horas",
+      "Autor": "J.P Romero",
+      "ISBN": "978-100000011",
+      "Categoria": "Bases de Datos",
+      "Estado": true,
+      "urlImagen": "../images/img_books/aprende_sql.jpg"
+    },
+    {
+      "titulo": "Bases de Datos Distribuidas",
+      "Autor": "Ricardo León",
+      "ISBN": "978-100000012",
+      "Categoria": "Bases de Datos",
+      "Estado": false,
+      "urlImagen": "../images/img_books/base_datos_distribuidas.png"
+    },
+    {
+      "titulo": "Redes de Computadores",
+      "Autor": "James F. - Keith W.",
+      "ISBN": "978-100000013",
+      "Categoria": "Redes",
+      "Estado": true,
+      "urlImagen": "../images/img_books/redes_computadoras.jpg"
+    },
+    {
+      "titulo": "Protocolos TCP/IP",
+      "Autor": "Jose D.",
+      "ISBN": "978-100000014",
+      "Categoria": "Redes",
+      "Estado": true,
+      "urlImagen": "../images/img_books/protocolo_tcpip.jpg"
+    },
+    {
+      "titulo": "Seguridad Informática",
+      "Autor": "Camila Navarro",
+      "ISBN": "978-100000015",
+      "Categoria": "Redes",
+      "Estado": false,
+      "urlImagen": "../images/img_books/seguridad_informatica.jpg"
+    },
+    {
+      "titulo": "Planificación y administración de Redes",
+      "Autor": "Eleuterio Martinez",
+      "ISBN": "978-100000016",
+      "Categoria": "Redes",
+      "Estado": true,
+      "urlImagen": "../images/img_books/planificacion_redes.jpg"
+    },
+    {
+      "titulo": "Comunicaciones Inalámbricas",
+      "Autor": "David Roldan",
+      "ISBN": "978-100000017",
+      "Categoria": "Redes",
+      "Estado": true,
+      "urlImagen": "../images/img_books/comunicacion_inalambricas.jpg"
+    },
+    {
+      "titulo": "Redes Cisco",
+      "Autor": "Ernesto Ariganello",
+      "ISBN": "978-100000018",
+      "Categoria": "Redes",
+      "Estado": false,
+      "urlImagen": "../images/img_books/redes_cisco.webp"
+    },
+    {
+      "titulo": "Machine Learning Simplified",
+      "Autor": "Andrew Wolf",
+      "ISBN": "978-100000019",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": true,
+      "urlImagen": "../images/img_books/machine_learning.png"
+    },
+    {
+      "titulo": "Redes Neuronales",
+      "Autor": "Rudolph Russel",
+      "ISBN": "978-100000020",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": true,
+      "urlImagen": "../images/img_books/redes_neuronales.gif"
+    },
+    {
+      "titulo": "Procesamiento de base de datos",
+      "Autor": "David M.",
+      "ISBN": "978-100000021",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": false,
+      "urlImagen": "../images/img_books/procesamiento_bd.jpg"
+    },
+    {
+      "titulo": "Visión Artificial",
+      "Autor": "Tomas Dominguez M. ",
+      "ISBN": "978-100000022",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": true,
+      "urlImagen": "../images/img_books/vision_artificial.jpg"
+    },
+    {
+      "titulo": "Deep Learning Generativo",
+      "Autor": "David Foster",
+      "ISBN": "978-100000023",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": true,
+      "urlImagen": "../images/img_books/deep_learning.jpg"
+    },
+    {
+      "titulo": "Introducción a la IA",
+      "Autor": "Jose Maria G.",
+      "ISBN": "978-100000024",
+      "Categoria": "Inteligencia Artificial",
+      "Estado": false,
+      "urlImagen": "../images/img_books/introduccion_ia.jpg"
+    },
+    {
+      "titulo": "HTML5 y CSS3",
+      "Autor": "Christophe Aubry",
+      "ISBN": "978-100000025",
+      "Categoria": "Desarrollo Web",
+      "Estado": true,
+      "urlImagen": "../images/img_books/html5_css3.jpg"
+    },
+    {
+      "titulo": "Eloquent JavaScript",
+      "Autor": "Marijn Haverbeke",
+      "ISBN": "978-100000026",
+      "Categoria": "Desarrollo Web",
+      "Estado": true,
+      "urlImagen": "../images/img_books/elocuent_js.jpg"
+    },
+    {
+      "titulo": "Aprendiendo React",
+      "Autor": "Carlos Azaustre",
+      "ISBN": "978-100000027",
+      "Categoria": "Desarrollo Web",
+      "Estado": false,
+      "urlImagen": "../images/img_books/aprendiendo_react.jpg"
+    },
+    {
+      "titulo": "Diseño Web",
+      "Autor": "Ethan Marcotte",
+      "ISBN": "978-100000028",
+      "Categoria": "Desarrollo Web",
+      "Estado": true,
+      "urlImagen": "../images/img_books/diseño_web.webp"
+    },
+    {
+      "titulo": "El Gran Libro de Node.js",
+      "Autor": "Ulises Gascón",
+      "ISBN": "978-100000029",
+      "Categoria": "Desarrollo Web",
+      "Estado": true,
+      "urlImagen": "../images/img_books/nodejs.jpg"
+    },
+    {
+      "titulo": "RESTful Web APIs",
+      "Autor": "Leonard R. - Mike A. - San R.",
+      "ISBN": "978-100000030",
+      "Categoria": "Desarrollo Web",
+      "Estado": false,
+      "urlImagen": "../images/img_books/restful_web.jpg"
+    }
+  ]
+}

@@ -18,7 +18,7 @@
   }
   /*Cards Books*/
   .bookCard__container {
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(3, 300px);
     justify-content: center;
   }
 }
